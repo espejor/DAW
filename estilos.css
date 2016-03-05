@@ -6,8 +6,8 @@
 
 nav {
     position : absolute;
-/*    left : 8px;
-    width : 98.8%;*/
+/*    left : 8px;*/
+    width : 100%;
     background-color : #55f;
     font-family: arial, verdana, sans-serif;
 }
