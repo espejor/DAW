@@ -26,6 +26,7 @@ nav ul li a {
     text-align : center;
     text-decoration : none;
     color : #ccc;
+    font-family: arial, verdana, sans-serif;
 }
 nav ul li a:hover {
     color : #fff;
