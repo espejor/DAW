@@ -6,7 +6,7 @@
 
 nav {
     position : absolute;
-    left : 0;
+    left : 5px;
     width : 100%;
     background : url(Background_nav.png);
     font-family: arial, verdana, sans-serif;
