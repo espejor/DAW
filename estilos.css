@@ -6,9 +6,9 @@
 
 nav {
     position : absolute;
-    left : 8px;
-    width : 98.8%;
-    background-color : #ccf;
+/*    left : 8px;
+    width : 98.8%;*/
+    background-color : #55f;
     font-family: arial, verdana, sans-serif;
 }
 nav ul {
