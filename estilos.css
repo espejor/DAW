@@ -1,4 +1,5 @@
 .portada {
+    position:absolute;
     max-width: 100%;
     height: auto;
     margin: -8px 0px -8px 0px;
@@ -48,7 +49,7 @@ nav ul li.selected a {
 aside section {
     position: absolute;
     margin-top: 44px;
-    background-color : #111 ;
+    background-color : #000 ;
     color:#fff;
     font-family: arial, verdana, sans-serif;
     font-size: 14px;
