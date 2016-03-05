@@ -1,7 +1,7 @@
 .portada {
     max-width: 100%;
     height: auto;
-    margin: -8px -8px -8px -8px ;
+    margin: -8px 0px -8px -8px ;
 }
 
 nav {
@@ -13,7 +13,7 @@ nav {
 }
 nav ul {
     margin : 0 auto;
-    width : 960px;
+    width : 970px;
     list-style : none;
     text-align: left;
 }
