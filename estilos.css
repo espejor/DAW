@@ -1,12 +1,12 @@
 .portada {
     max-width: 100%;
     height: auto;
-    margin: -8px 0px 0px 0px ;
+    margin: -8px -8px -8px -8px ;
 }
 
 nav {
     position : absolute;
-    left : 8px;
+    left : 0px;
     width : 100%;
     background : url(Background_nav.png);
     font-family: arial, verdana, sans-serif;
