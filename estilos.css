@@ -8,6 +8,7 @@ nav {
     left : 0;
     width : 100%;
     background : url(Background_nav.png);
+    font-family: arial, verdana, sans-serif;
 }
 nav ul {
     margin : 0 auto;
@@ -26,7 +27,6 @@ nav ul li a {
     text-align : center;
     text-decoration : none;
     color : #ccc;
-    font-family: arial, verdana, sans-serif;
 }
 nav ul li a:hover {
     color : #fff;
