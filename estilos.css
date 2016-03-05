@@ -3,12 +3,16 @@
     height: auto;
     margin: -8px 0px -8px 0px;
 }
-
-nav {
-/*    position : absolute;*/
+.menu{
     width : 100%;
     background-color : #3d5d83;
     font-family: arial, verdana, sans-serif;
+}
+nav {
+/*    position : absolute;
+    width : 100%;
+    background-color : #3d5d83;
+    font-family: arial, verdana, sans-serif;*/
 }
 nav ul {
     margin : 0 auto;
