@@ -47,6 +47,7 @@ nav ul li.selected a {
 
 aside section {
     position: absolute;
+    margin-top: 44px;
     background-color : #111 ;
     color:#fff;
     font-family: arial, verdana, sans-serif;
