@@ -36,3 +36,7 @@ nav ul li a:hover {
 nav ul li.selected a {
     color : #fff;
 }
+
+.copyright {
+    color : #000 ;
+}
