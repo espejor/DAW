@@ -39,5 +39,6 @@ nav ul li.selected a {
 
 .copyright {
     background-color : #000 ;
+    color:#fff;
     font-family: arial, verdana, sans-serif;
 }
