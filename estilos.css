@@ -19,6 +19,9 @@ nav ul {
     width : 100%;
     list-style : none;
     text-align: left;
+        width : 100%;
+    background-color : #3d5d83;
+    font-family: arial, verdana, sans-serif;
 }
 nav ul li {
     float : left;
