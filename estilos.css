@@ -8,7 +8,7 @@ nav {
     position : absolute;
     left : 8px;
     width : 98.8%;
-    background : url(Background_nav.png);
+    background-color : #ccf;
     font-family: arial, verdana, sans-serif;
 }
 nav ul {
