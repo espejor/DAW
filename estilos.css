@@ -9,10 +9,10 @@
     font-family: arial, verdana, sans-serif;
 }
 nav {
-/*    position : absolute;
+/*    position : absolute;*/
     width : 100%;
     background-color : #3d5d83;
-    font-family: arial, verdana, sans-serif;*/
+    font-family: arial, verdana, sans-serif;
 }
 nav ul {
     margin : 0 auto;
@@ -56,3 +56,4 @@ nav ul li.selected a {
     font-size: 14px;
     width: 18%;
 }
+body {margin:0;}
