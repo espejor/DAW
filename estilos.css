@@ -4,32 +4,32 @@ img {
 }
 
 nav {
-position : absolute;
-left : 0;
-width : 100%;
-background : url(Background_nav.png);
+    position : absolute;
+    left : 0;
+    width : 100%;
+    background : url(Background_nav.png);
 }
 nav ul {
-margin : 0 auto;
-width : 940px;
-list-style : none;
+    margin : 0 auto;
+    width : 940px;
+    list-style : none;
 }
 nav ul li {
-float : left;
+    float : left;
 }
 nav ul li a {
-display : block;
-margin-right : 20px;
-width : 140px;
-font-size : 14px;
-line-height : 44px;
-text-align : center;
-text-decoration : none;
-color : #ccc;
+    display : block;
+    margin-right : 20px;
+    width : 140px;
+    font-size : 140px;
+    line-height : 44px;
+    text-align : center;
+    text-decoration : none;
+    color : #ccc;
 }
 nav ul li a:hover {
-color : #fff;
+    color : #fff;
 }
 nav ul li.selected a {
-color : #fff;
+    color : #fff;
 }
