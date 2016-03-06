@@ -13,7 +13,7 @@
   <body>
     <header>
       <picture>
-        <img src="el_tiempo_ancho_30_con_texto.jpg" alt="Foto de portada">
+        <img class= portada  src="el_tiempo_ancho_30_con_texto.jpg" alt="Foto de portada">
       </picture>
     </header>
     <nav>
@@ -25,20 +25,44 @@
             <li><a href="#">Acerca de</a></li> 
         </ul>    
     </nav>
-    <aside>
-      <h3>Captura de municipio a mostrar</h3>
-    </aside>
-    <main>
+
+
       <section>
-        <h2>¡Volando voy, volando vuelvo!</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/r5mbojrO3j4?hl=es&rel=0" frameborder="0" allowfullscreen></iframe>
+        
       </section>
       <section>
       
       </section>
-    </main>
+
+    <aside class = captura>
+      <section>
+        <header>
+          <h2>Captura de municipio a mostrar</h2>
+        </header>
+          <form id="solicitudForm" action="" method="get">
+            <h3>Selección de zona a consultar</h3>
+            <fieldset>
+                <legend>País</legend>
+                <ul>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Provincia</legend>
+                <ul>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Municipio</legend>
+                <ul>
+                </ul>
+            </fieldset>
+            <input type="submit" name="Consultar" value="Consultar" />
+        </form>
+
+      </section>
+    </aside>
     <footer>
-      <h5>José Espejo Roig</h5>
+      <p class=copyright>©José Espejo Roig</p>
     </footer>
   </body>
   
