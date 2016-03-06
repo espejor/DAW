@@ -1,13 +1,14 @@
 .portada {
+    position : relative;
     max-width: 100%;
     height: auto;
     margin: -8px 0px -8px 0px;
 }
 
 nav {
-    position : relative;
+    position : absolute;
+    background-color : #3d5d83;
     width : 100%;
-    background-color : #000;
     font-family: arial, verdana, sans-serif;
 }
 nav ul {
@@ -53,5 +54,17 @@ aside section {
     color:#fff;
     font-family: arial, verdana, sans-serif;
     font-size: 14px;
-    width: 18%;
+    width: 22%;
+}
+
+aside section header h3{
+	padding: 2em 0em 0em 1em;
+}
+input {
+  padding: .4em;
+  border: 2px solid #eae1c0;
+  border-radius: 5px;
+  box-shadow: rgba(0,0,0,.5) 1px 1px 1px 1px inset;
+  background: #fff;	
+  margin: .9em;
 }

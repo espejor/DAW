@@ -3,9 +3,9 @@
   
   <head>
     <title>Practica 1. DAW</title>
-    <meta charset="utf-8" />
-    <META NAME="Author" CONTENT="JosÃ© Espejo Roig">
-    <link rel="stylesheet" href="estilos.css" />
+    <meta charset="iso-8859-1" />
+    <META NAME="Author" CONTENT="José Espejo Roig">
+    <link rel="stylesheet" href="estilos/estilos.css" />
     <script src="script.js"></script>
   </head>
   
@@ -13,15 +13,15 @@
   <body>
     <header>
       <picture>
-        <img class= portada  src="images/el_tiempo_ancho_30.jpg" alt="Foto de portada">
+        <img class= portada  src="images/el_tiempo_ancho_30_con_texto.jpg" alt="Foto de portada">
       </picture>
     </header>
-    <nav>
-        <!-- Listado de NavegaciÃ³n -->
-        <ul class="menu">  
+    <nav class="menu">
+        <!-- Listado de Navegación -->
+        <ul>  
             <li><a href="#">Home</a></li>  
             <li><a href="#">Busca tu ciudad</a></li>  
-            <li><a href="#">ConfiguraciÃ³n</a></li>
+            <li><a href="#">Configuración</a></li>
             <li><a href="#">Acerca de</a></li> 
         </ul>    
     </nav>
@@ -41,18 +41,22 @@
         </header>
           <form id="solicitudForm" action="" method="get">
             <fieldset>
-                <legend>PaÃ­s</legend>
+                <legend>Paí­s</legend>
                 <ul>
+				<input type="text" name="pais" id="pais" placeholder="País" required="required"/>
                 </ul>
             </fieldset>
             <fieldset>
                 <legend>Provincia</legend>
                 <ul>
+				<input type="text" name="provincia" id="provincia" placeholder="Provincia" required="required"/>
+
                 </ul>
             </fieldset>
             <fieldset>
                 <legend>Municipio</legend>
                 <ul>
+				<input type="text" name="municipio" id="municipio" placeholder="Municipio" required="required"/>
                 </ul>
             </fieldset>
             <input type="submit" name="Consultar" value="Consultar" />
@@ -61,7 +65,7 @@
       </section>
     </aside>
     <footer class=copyright>
-      <p>Â©JosÃ© Espejo Roig</p>
+      <p>©José Espejo Roig</p>
     </footer>
   </body>
   
