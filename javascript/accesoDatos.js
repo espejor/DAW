@@ -17,6 +17,7 @@ app.cargaDatos = function() {
     }
   });
 }
+
 app.procesaDatos = function() {
   app.condicionNombre = app.datos.weather[0].main;
   app.temperatura = app.datos.main.temp;
@@ -27,12 +28,11 @@ app.procesaDatos = function() {
   app.muestra();
 
 }
+
 app.muestra = function() {
   $('#js_w_temp').append("<p class='weather_temperature'>" + app.temperatura + "�</p>");
   $('#js_w_icon').append(" <i class='wi " + app.icono + "'></i>");
-
   $('#js_w_icon').append("<p class='weather_name'>" + app.condicionNombre.toUpperCase() + "</p>");
-
 }
 
 app.obtenIcono = function(weatherIcon) {
@@ -90,9 +90,10 @@ app.obtenIcono = function(weatherIcon) {
 
   return icon;
 }
+
 app.cargaDatos();
 
-
+/*
 
 function descargaArchivo() {
   // Obtener la instancia del objeto XMLHttpRequest
@@ -120,3 +121,4 @@ function descargaArchivo() {
 }
 
 window.onload = descargaArchivo;
+*/
