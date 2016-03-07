@@ -37,6 +37,64 @@ nav ul li.selected a {
     color : #fff;
 }
 
+.section__main {
+	width: 100%;
+	
+	margin: auto;
+	text-align: center;
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	height: 100%;
+	min-height: 100%;
+	background: url(http://ernestojimenez.net/background.jpg);
+	background-size: cover;
+}
+.section__content {
+	width: 60%;
+	max-width: 1400px;
+	padding-top: 48px;
+	margin: auto;
+}
+.weather__block {
+	width: 100%;
+	
+	float: left;
+
+}
+@media only screen and (min-width: 37.5em) {
+    .weather__block {
+      width: 45%;
+	margin: 1%;
+	
+      } 
+}
+
+h1 {
+	font-size: 26px;
+   	font-size: 1.625rem;
+   	padding: 2rem;
+   	margin-bottom: 1rem;
+}
+h2 {
+	font-size: 18px;
+	font-size: 1.3rem;
+	margin-bottom: 48px;
+}
+.wi, .weather_temperature {
+	font-size: 160px;
+	font-size: 10rem;
+	width: 100%;
+	text-align: center;
+}
+.weather_name {
+	font-weight: bold;
+	font-size: 20px;
+	font-size: 1.2rem;
+}
+.wi {
+	margin-bottom: 22px;
+}
+
+
 footer p{
     position: relative;
     background-color : #000 ;

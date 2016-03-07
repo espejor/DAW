@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
-  
+
   <head>
     <title>Practica 1. DAW</title>
-    <meta charset="iso-8859-1" />
-    <META NAME="Author" CONTENT="Jos� Espejo Roig">
+    <meta charset="utf-8" />
+    <META NAME="Author" CONTENT="José Espejo Roig">
     <link rel="stylesheet" href="estilos/estilos.css" />
-    <script src="script.js"></script>
+    <script src="javascript/accesoDatos.js"></script>
   </head>
-  
-  
+
+
   <body>
     <header>
       <picture>
@@ -17,33 +17,37 @@
       </picture>
     </header>
     <nav class="menu">
-        <!-- Listado de Navegaci�n -->
-        <ul>  
-            <li><a href="#">Home</a></li>  
-            <li><a href="#">Busca tu ciudad</a></li>  
-            <li><a href="#">Configuraci�n</a></li>
-            <li><a href="#">Acerca de</a></li> 
-        </ul>    
+        <!-- Listado de Navegaciï¿½n -->
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Busca tu ciudad</a></li>
+            <li><a href="#">Configuraciï¿½n</a></li>
+            <li><a href="#">Acerca de</a></li>
+        </ul>
     </nav>
 
+    <section class="section__main">
+        <div class="section__content">
+            <h1>Conectando con la API de tiempo</h1>
+            <h2>El tiempo en Mï¿½laga</h2>
+            <div class="weather__block" id="js_w_temp"></div>
+            <div class="weather__block" id="js_w_icon"></div>
+        </div>
+    </section>
+    <section>
 
-      <section>
-        
-      </section>
-      <section>
-      
-      </section>
+    </section>
 
     <aside class = captura>
       <section>
         <header>
-          <h3>Selecci�n de zona a consultar</h3>
+          <h3>Selecciï¿½n de zona a consultar</h3>
         </header>
           <form id="solicitudForm" action="" method="get">
             <fieldset>
-                <legend>Pa��s</legend>
+                <legend>Paï¿½ï¿½s</legend>
                 <ul>
-				<input type="text" name="pais" id="pais" placeholder="Pa�s" required="required"/>
+				<input type="text" name="pais" id="pais" placeholder="Paï¿½s" required="required"/>
                 </ul>
             </fieldset>
             <fieldset>
@@ -65,8 +69,8 @@
       </section>
     </aside>
     <footer class=copyright>
-      <p>�Jos� Espejo Roig</p>
+      <p>ï¿½Josï¿½ Espejo Roig</p>
     </footer>
   </body>
-  
+
 </html>
