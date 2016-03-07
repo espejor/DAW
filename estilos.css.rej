@@ -1,7 +1,0 @@
-diff a/estilos.css b/estilos.css	(rejected hunks)
-@@ -1,5 +1,4 @@
- .portada {
--    position:absolute;
-     max-width: 100%;
-     height: auto;
-     margin: -8px 0px -8px 0px;
