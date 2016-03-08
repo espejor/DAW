@@ -35,7 +35,7 @@
                   <legend>Municipio</legend>
   				        <input type="text" name="municipio" id="municipio" placeholder="Municipio" required="required"/>
               </fieldset>
-              <input type="submit" name="consultar" value="consultar"/>
+              <input type="button" id = "consultar" name="consultar" value="Consultar"/>
           </form>
 
         </section>
@@ -43,14 +43,25 @@
 
       <section class="section__main">
           <div class="section__content">
-              <div class="weather__block" id="js_w_temp"></div>
-              <div class="weather__block" id="js_w_icon"></div>
+              <div class="weather__block">
+                <p id="js_w_txt">Ahora en </p>
+              </div>
+              <div class="weather__block">
+                <p id="js_w_munic"></p>
+              </div>
+              <div class="weather__block">
+                <img id="js_w_icon">
+              </div>
+              <div class="weather__block">
+                <p id="js_w_temp"></p>
+              </div>
+
           </div>
       </section>
     </main>
-<!--    <footer class=copyright>
-      <p>José Espejo Roig</p>
+    <footer>
+      <p class=copyright>©José Espejo Roig</p>
     </footer>
--->  </body>
+  </body>
 
 </html>

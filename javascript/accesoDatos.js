@@ -1,22 +1,24 @@
 
 
-"use strict";
+//"use strict";
 var app = {};
 
 
 function asignaMunicipio(){
   app.municipio = $('#municipio').val();
+  app.cargaDatos();
 }
 
 
 $(document).ready(function(){
-  //$('#consultar').click(asignaMunicipio);
+  $("#consultar").click(asignaMunicipio);
+  app.apikey = "05b19ab20e25b29516d13983b8491391";
+  app.municipio = "Sevilla";
   app.cargaDatos();
 });
 
 app.cargaDatos = function() {
-  app.apikey = "05b19ab20e25b29516d13983b8491391";
-  app.municipio = "Sevilla";
+
   if ($('#municipio').val() != ""){
     app.municipio = $('#municipio').val();
   }
@@ -34,9 +36,6 @@ app.cargaDatos = function() {
   });
 }
 
-
-
-
 app.procesaDatos = function() {
   app.condicionNombre = app.datos.weather[0].main;
   app.temperatura = app.datos.main.temp;
@@ -46,11 +45,11 @@ app.procesaDatos = function() {
   //app.obtenIcono(condicionIcono);
 
   app.muestra();
-
 }
 
 app.muestra = function() {
-  $('#js_w_temp').append("<p class='weather_temperature'>" + app.temperatura + " ºC</p>");
-  $('#js_w_icon').append(" <img src='" + app.icono + "'>");
-  $('#js_w_icon').append("<p class='weather_name'>" + app.condicionNombre.toUpperCase() + "</p>");
+  $('#js_w_munic').html(app.municipio);
+  $('#js_w_icon').attr("src",app.icono);
+  $('#js_w_temp').html(app.temperatura + " ºC</p>");
+  //$('#js_w_icon').append("<p class='weather_name'>" + app.condicionNombre.toUpperCase() + "</p>");
 }
