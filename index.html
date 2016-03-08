@@ -6,71 +6,51 @@
     <meta charset="utf-8" />
     <META NAME="Author" CONTENT="José Espejo Roig">
     <link rel="stylesheet" href="estilos/estilos.css" />
+    <script src="javascript/jquery-2.2.1.min.js"></script>
     <script src="javascript/accesoDatos.js"></script>
   </head>
 
 
   <body>
     <header>
-      <picture>
-        <img class= portada  src="images/el_tiempo_ancho_30_con_texto.jpg" alt="Foto de portada">
-      </picture>
+        <img class="portada"  src="images/el_tiempo_ancho_30_con_texto.jpg">
     </header>
-    <nav class="menu">
-        <!-- Listado de Navegaciï¿½n -->
+<!--    <nav class="menu">
+
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Busca tu ciudad</a></li>
-            <li><a href="#">Configuraciï¿½n</a></li>
+            <li><a href="#">Configuración</a></li>
             <li><a href="#">Acerca de</a></li>
         </ul>
     </nav>
+-->    <main>
+      <aside class = captura>
+        <section>
+          <header>
+            <h3>Elija municipio</h3>
+          </header>
+            <form id="solicitudForm" >
+              <fieldset>
+                  <legend>Municipio</legend>
+  				        <input type="text" name="municipio" id="municipio" placeholder="Municipio" required="required"/>
+              </fieldset>
+              <input type="submit" name="consultar" value="consultar"/>
+          </form>
 
-    <section class="section__main">
-        <div class="section__content">
-            <h1>Conectando con la API de tiempo</h1>
-            <h2>El tiempo en Mï¿½laga</h2>
-            <div class="weather__block" id="js_w_temp"></div>
-            <div class="weather__block" id="js_w_icon"></div>
-        </div>
-    </section>
-    <section>
+        </section>
+      </aside>
 
-    </section>
-
-    <aside class = captura>
-      <section>
-        <header>
-          <h3>Selecciï¿½n de zona a consultar</h3>
-        </header>
-          <form id="solicitudForm" action="" method="get">
-            <fieldset>
-                <legend>Paï¿½ï¿½s</legend>
-                <ul>
-				<input type="text" name="pais" id="pais" placeholder="Paï¿½s" required="required"/>
-                </ul>
-            </fieldset>
-            <fieldset>
-                <legend>Provincia</legend>
-                <ul>
-				<input type="text" name="provincia" id="provincia" placeholder="Provincia" required="required"/>
-
-                </ul>
-            </fieldset>
-            <fieldset>
-                <legend>Municipio</legend>
-                <ul>
-				<input type="text" name="municipio" id="municipio" placeholder="Municipio" required="required"/>
-                </ul>
-            </fieldset>
-            <input type="submit" name="Consultar" value="Consultar" />
-        </form>
-
+      <section class="section__main">
+          <div class="section__content">
+              <div class="weather__block" id="js_w_temp"></div>
+              <div class="weather__block" id="js_w_icon"></div>
+          </div>
       </section>
-    </aside>
-    <footer class=copyright>
-      <p>ï¿½Josï¿½ Espejo Roig</p>
+    </main>
+<!--    <footer class=copyright>
+      <p>José Espejo Roig</p>
     </footer>
-  </body>
+-->  </body>
 
 </html>

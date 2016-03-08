@@ -1,12 +1,15 @@
+body{
+  margin:0;
+}
+
 .portada {
     position : relative;
     width: 100%;
-    height: auto;
-    margin: -8px 0px -8px 0px;
+    display:block;
 }
-
+/*
 nav {
-    position : absolute;
+    display: inline-block;
     background-color : #3d5d83;
     width : 100%;
     font-family: arial, verdana, sans-serif;
@@ -36,52 +39,38 @@ nav ul li a:hover {
 nav ul li.selected a {
     color : #fff;
 }
+*/
+main{
+  display: block;
+    margin:0;
+}
 
 .section__main {
-	width: 100%;
-	
-	margin: auto;
+  display:inline-block;
 	text-align: center;
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-	height: 100%;
-	min-height: 100%;
-	background: url(http://ernestojimenez.net/background.jpg);
-	background-size: cover;
+	background-color: #ccc;
+  width: 81%;
 }
 .section__content {
 	width: 60%;
-	max-width: 1400px;
-	padding-top: 48px;
 	margin: auto;
 }
 .weather__block {
 	width: 100%;
-	
-	float: left;
-
 }
+
 @media only screen and (min-width: 37.5em) {
     .weather__block {
-      width: 45%;
-	margin: 1%;
-	
-      } 
+        width: 45%;
+	       margin: 1%;
+
+      }
 }
 
-h1 {
-	font-size: 26px;
-   	font-size: 1.625rem;
-   	padding: 2rem;
-   	margin-bottom: 1rem;
-}
-h2 {
-	font-size: 18px;
-	font-size: 1.3rem;
-	margin-bottom: 48px;
-}
+
 .wi, .weather_temperature {
-	font-size: 160px;
-	font-size: 10rem;
+	font-size: 2rem;
 	width: 100%;
 	text-align: center;
 }
@@ -96,7 +85,6 @@ h2 {
 
 
 footer p{
-    position: relative;
     background-color : #000 ;
     color:#fff;
     font-family: arial, verdana, sans-serif;
@@ -104,15 +92,19 @@ footer p{
     line-height : 44px;
     text-align : center;
 }
-
+aside{
+  display:inline;
+}
 aside section {
-    position: relative;
-    margin-top: 44px;
-    background-color : #000 ;
+
     color:#fff;
     font-family: arial, verdana, sans-serif;
     font-size: 14px;
-    width: 22%;
+
+    display: inline-block;
+    vertical-align: top;
+    width: 18%;
+    background-color: black;
 }
 
 aside section header h3{
@@ -123,6 +115,6 @@ input {
   border: 2px solid #eae1c0;
   border-radius: 5px;
   box-shadow: rgba(0,0,0,.5) 1px 1px 1px 1px inset;
-  background: #fff;	
+  background: #fff;
   margin: .9em;
 }
