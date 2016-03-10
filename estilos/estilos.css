@@ -58,11 +58,10 @@ main{
   align-items: center;
 	width: 100%;
   padding-top: 5%;
+  font-size: 2rem;
 }
 .weather__block {
-  font-size: 2rem;
-  align-self: center;
-  margin:0;
+
 }
 
 #eltiempo{
@@ -112,7 +111,7 @@ aside section {
     color:#fff;
     font-family: arial, verdana, sans-serif;
     font-size: 14px;
-
+    height: 53em;
     display: inline-block;
     vertical-align: top;
     width: 18%;
@@ -129,4 +128,37 @@ input {
   box-shadow: rgba(0,0,0,.5) 1px 1px 1px 1px inset;
   background: #fff;
   margin: .9em;
+}
+
+.cabecera_frcst,.icon_frcst, .tmp_frcst,.wind_frcst,.humedad_frcst{
+  background-color: black;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border: 1px;
+  border-color: white;
+  border-style: solid;
+  width: 9%;
+  display: table-cell;
+  vertical-align: middle;
+}
+.Dia{
+
+}
+
+.section_forecast{
+  display: inline-block;
+}
+.section_content_frcst{
+
+}
+
+.icon_frcst{
+  background-color: white;
+  border-color: black;
+}
+.tmp_frcst_max{
+  color:red;
+}
+.tmp_frcst_min{
+  color:blue;
 }
