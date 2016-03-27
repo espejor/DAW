@@ -66,7 +66,7 @@ app.procesaDatos = function() {
   //var condicionIcono = app.datos.weather[0].icon;
   app.icono = "http://openweathermap.org/img/w/"+app.datos.weather[0].icon+".png";
   //app.obtenIcono(condicionIcono);
-  app.portada = "../images/" + app.datos.weather[0].icon+".jpg";
+  app.portada = "images/" + app.datos.weather[0].icon+".jpg";
   app.muestra();
 }
 app.procesaDatos_frcst = function() {
