@@ -66,7 +66,7 @@ app.procesaDatos = function() {
   //var condicionIcono = app.datos.weather[0].icon;
   app.icono = "http://openweathermap.org/img/w/"+app.datos.weather[0].icon+".png";
   //app.obtenIcono(condicionIcono);
-
+  app.portada = "../images/" + app.datos.weather[0].icon+".jpg";
   app.muestra();
 }
 app.procesaDatos_frcst = function() {
@@ -100,6 +100,8 @@ app.procesaDatos_frcst = function() {
 }
 
 app.muestra = function() {
+  $('#portada').attr("src".app.portada);
+
   $('#temp_big').html(app.temperatura + " ºC");
 
   $('#js_w_munic').html(app.municipio);
