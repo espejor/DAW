@@ -100,6 +100,8 @@ app.procesaDatos_frcst = function() {
 }
 
 app.muestra = function() {
+  $('#temp_big').html(app.temperatura + " ºC");
+
   $('#js_w_munic').html(app.municipio);
   $('#js_w_icon').attr("src",app.icono);
   $('#js_w_temp_icon').attr("src",iconoTemp);
