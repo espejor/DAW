@@ -143,12 +143,22 @@ input {
 }
 .now_temp{
   position: absolute;
-  top: 50px;
+  top: 120px;
   left: 50px;
   color:white;
   font-size: 1000%;
   font-family: fantasy;
 }
+
+.now_temp #js_w_munic{
+  margin: 0;
+  font-size: 30%;
+}
+
+.now_temp #temp_big{
+  margin: 0;
+}
+
 
 .Dia{
 
