@@ -141,6 +141,12 @@ input {
   display: table-cell;
   vertical-align: middle;
 }
+.now_temp{
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
 .Dia{
 
 }
