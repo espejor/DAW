@@ -100,7 +100,7 @@ app.procesaDatos_frcst = function() {
 }
 
 app.muestra = function() {
-  $('#portada').attr("src".app.portada);
+  $('#portada').attr("src",app.portada);
 
   $('#temp_big').html(app.temperatura + " ºC");
 
