@@ -8,7 +8,7 @@ body{
     body{
       font-size: 14px;
     }
-    header.now_temp {
+    header .now_temp {
       top:100px;
       color: black;
     }
