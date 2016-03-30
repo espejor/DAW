@@ -70,14 +70,14 @@ main{
     width: auto;
 }
 
-@media only screen and (min-width: 37.5em) {
+@media only screen and (min-width: 37.5rem) {
     .weather__block {
         width: 45%;
 	      margin: 0%;
     }
-    .now_temp{
+    body{
       width: 50%;
-      font-size: 10rem;
+      font-size: 50%;
     }
 }
 
