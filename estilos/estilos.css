@@ -10,6 +10,12 @@ body{
   }
 }
 
+@media only screen and (min-width: 700px) {
+  header .busqueda{
+    right: 50px;
+  }
+}
+
 
 @media only screen and (max-width: 1200px) {
     body{
@@ -237,7 +243,6 @@ input {
 
 header .busqueda{
   position: absolute;
-  right: 50px;
 }
 
 @keyframes fadein {
