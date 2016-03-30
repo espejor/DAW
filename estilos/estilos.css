@@ -199,6 +199,10 @@ input {
   margin: 0;
 }
 
+.busqueda{
+  top: 50px;
+  position: absolute;
+}
 
 @keyframes fadein {
     from { opacity: 0; }
