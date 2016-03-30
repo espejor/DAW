@@ -11,7 +11,7 @@ body{
     header .now_temp {
       top:100px;
     }
-    header busqueda{
+    header .busqueda{
       top:230px;
     }
 }
@@ -23,7 +23,7 @@ body{
     header .now_temp {
       top:100px;
     }
-    header busqueda{
+    header .busqueda{
       top:230px;
     }
 }
@@ -35,7 +35,7 @@ body{
     header .now_temp {
       top:100px;
     }
-    header busqueda{
+    header .busqueda{
       top:230px;
     }
 }
@@ -47,7 +47,7 @@ body{
     header .now_temp {
       top:100px;
     }
-    header busqueda{
+    header .busqueda{
       top:230px;
     }
 }
@@ -59,7 +59,7 @@ body{
     header .now_temp {
       top:90px;
     }
-    header busqueda{
+    header .busqueda{
       top:220px;
     }
 }
@@ -71,7 +71,7 @@ body{
     header .now_temp {
       top:70px;
     }
-    header busqueda{
+    header .busqueda{
       top:200px;
     }
 }
@@ -83,7 +83,7 @@ body{
     header .now_temp {
       top:50px;
     }
-    header busqueda{
+    header .busqueda{
       top:180px;
     }
 }
@@ -95,7 +95,7 @@ body{
     header .now_temp {
       top:40px;
     }
-    header busqueda{
+    header .busqueda{
       top:150px;
     }
 }
