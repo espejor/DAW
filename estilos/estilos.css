@@ -1,47 +1,22 @@
 body{
   margin:0;
   width: 100%;
-  font-size: 100%;
+  font-size: 16px;
 }
+
+@media only screen and (min-width: 700px) {
+    body{
+      font-size: 10px;
+    }
+}
+
 
 .portada {
     position : relative;
     width: 100%;
     display:block;
 }
-/*
-nav {
-    display: inline-block;
-    background-color : #3d5d83;
-    width : 100%;
-    font-family: arial, verdana, sans-serif;
-}
-nav ul {
-    margin : 0 auto;
-    width : 100%;
-    list-style : none;
-    text-align: left;
-}
-nav ul li {
-    float : left;
-}
-nav ul li a {
-    display : block;
-    margin-right : 20px;
-    width : 140px;
-    font-size : 14px;
-    line-height : 44px;
-    text-align : center;
-    text-decoration : none;
-    color : #ccc;
-}
-nav ul li a:hover {
-    color : #fff;
-}
-nav ul li.selected a {
-    color : #fff;
-}
-*/
+
 main{
   display: block;
   background-color: #43547B;
@@ -69,18 +44,6 @@ main{
 #eltiempo{
     width: auto;
 }
-
-@media only screen and (min-width: 700px) {
-    .weather__block {
-        width: 45%;
-	      margin: 0%;
-    }
-    body{
-      width: 50%;
-      font-size: 50%;
-    }
-}
-
 
 .wi, .weather_temperature {
 	font-size: 2em;
@@ -147,11 +110,11 @@ input {
   vertical-align: middle;
 }
 .now_temp{
+  margin: 0;
   position: absolute;
   top: 120px;
   left: 50px;
   color:white;
-  font-size: 9em;
   font-family: fantasy;
 
   -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
@@ -160,6 +123,14 @@ input {
      -o-animation: fadein 3s; /* Opera < 12.1 */
         animation: fadein 3s;
 }
+.now_temp #js_w_munic{
+  font-size: 6em;
+}
+
+.now_temp #temp_big{
+  font-size: 9em;
+}
+
 
 @keyframes fadein {
     from { opacity: 0; }
@@ -188,15 +159,6 @@ input {
 @-o-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
-}
-
-.now_temp #js_w_munic{
-  margin: 0;
-  font-size: 3em;
-}
-
-.now_temp #temp_big{
-  margin: 0;
 }
 
 
