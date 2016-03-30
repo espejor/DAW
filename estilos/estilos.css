@@ -282,6 +282,7 @@ header .busqueda{
 
 .section_forecast{
   display: inline-block;
+  font-size: 2em;
 }
 .section_content_frcst{
 
