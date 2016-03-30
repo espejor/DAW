@@ -266,7 +266,7 @@ header .busqueda{
 
 
 .Dia{
-
+  display: table-row;
 }
 
 .section_forecast{
