@@ -18,7 +18,7 @@ body{
       font-size: 12px;
     }
     header .now_temp {
-      top:80px;
+      top:100px;
     }
 }
 
@@ -27,7 +27,7 @@ body{
       font-size: 10px;
     }
     header .now_temp {
-      top:60px;
+      top:80px;
     }
 }
 
@@ -36,34 +36,43 @@ body{
       font-size: 8px;
     }
     header .now_temp {
-      top:40px;
+      top:100px;
     }
 }
 
 @media only screen and (max-width: 800px) {
     body{
-      font-size: 6px;
+      font-size: 7px;
     }
     header .now_temp {
-      top:20px;
+      top:90px;
     }
 }
 
 @media only screen and (max-width: 700px) {
     body{
-      font-size: 4px;
+      font-size: 6px;
     }
     header .now_temp {
-      top:10px;
+      top:70px;
     }
 }
 
 @media only screen and (max-width: 600px) {
     body{
-      font-size: 2px;
+      font-size: 5px;
     }
     header .now_temp {
-      top:5px;
+      top:70px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    body{
+      font-size: 4px;
+    }
+    header .now_temp {
+      top:60px;
     }
 }
 
