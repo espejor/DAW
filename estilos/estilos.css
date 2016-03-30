@@ -1,5 +1,7 @@
 body{
   margin:0;
+  width: 100%;
+  font-size: 100%;
 }
 
 .portada {
@@ -72,6 +74,10 @@ main{
     .weather__block {
         width: 45%;
 	      margin: 0%;
+    }
+    .now_temp{
+      width: 50%;
+      font-size: 10rem;
     }
 }
 
@@ -187,7 +193,7 @@ input {
 
 .now_temp #js_w_munic{
   margin: 0;
-  font-size: 30%;
+  font-size: 30rem;
 }
 
 .now_temp #temp_big{
