@@ -80,6 +80,10 @@ body{
     }
     header .busqueda {
       top:110px;
+      right: 25px;
+    }
+    header #municipio{
+
     }
 }
 
@@ -92,7 +96,7 @@ body{
     }
     header .busqueda{
       top:65px;
-    }
+      right: 5px;
 }
 
 @media only screen and (max-width: 400px) {
