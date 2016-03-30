@@ -125,10 +125,12 @@ input {
 }
 .now_temp #js_w_munic{
   font-size: 6em;
+  margin: 0;
 }
 
 .now_temp #temp_big{
-  font-size: 9em;
+  font-size: 19em;
+  margin: 0;
 }
 
 
