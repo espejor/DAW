@@ -27,7 +27,7 @@ body{
       font-size: 10px;
     }
     header .now_temp {
-      top:80px;
+      top:100px;
     }
 }
 
@@ -63,7 +63,7 @@ body{
       font-size: 5px;
     }
     header .now_temp {
-      top:70px;
+      top:50px;
     }
 }
 
@@ -72,7 +72,7 @@ body{
       font-size: 4px;
     }
     header .now_temp {
-      top:60px;
+      top:40px;
     }
 }
 
