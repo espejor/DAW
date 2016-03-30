@@ -8,11 +8,17 @@ body{
     body{
       font-size: 14px;
     }
+    .now_temp {
+      top:100px;
+    }
 }
 
 @media only screen and (max-width: 1100px) {
     body{
       font-size: 12px;
+    }
+    .now_temp {
+      top:80px;
     }
 }
 
@@ -20,11 +26,17 @@ body{
     body{
       font-size: 10px;
     }
+    .now_temp {
+      top:60px;
+    }
 }
 
 @media only screen and (max-width: 900px) {
     body{
       font-size: 8px;
+    }
+    .now_temp {
+      top:40px;
     }
 }
 
@@ -32,17 +44,26 @@ body{
     body{
       font-size: 6px;
     }
+    .now_temp {
+      top:20px;
+    }
 }
 
 @media only screen and (max-width: 700px) {
     body{
       font-size: 4px;
     }
+    .now_temp {
+      top:10px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
     body{
       font-size: 2px;
+    }
+    .now_temp {
+      top:5px;
     }
 }
 
