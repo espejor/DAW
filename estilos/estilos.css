@@ -223,7 +223,7 @@ input {
   margin: 0;
 }
 
-.busqueda{
+header .busqueda{
   top: 250px;
   right: 50px;
   position: absolute;
