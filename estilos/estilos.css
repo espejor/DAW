@@ -10,7 +10,6 @@ body{
     }
     header .now_temp {
       top:100px;
-      color: black;
     }
 }
 
@@ -18,7 +17,7 @@ body{
     body{
       font-size: 12px;
     }
-    .now_temp {
+    header .now_temp {
       top:80px;
     }
 }
@@ -27,7 +26,7 @@ body{
     body{
       font-size: 10px;
     }
-    .now_temp {
+    header .now_temp {
       top:60px;
     }
 }
@@ -36,7 +35,7 @@ body{
     body{
       font-size: 8px;
     }
-    .now_temp {
+    header .now_temp {
       top:40px;
     }
 }
@@ -45,7 +44,7 @@ body{
     body{
       font-size: 6px;
     }
-    .now_temp {
+    header .now_temp {
       top:20px;
     }
 }
@@ -54,7 +53,7 @@ body{
     body{
       font-size: 4px;
     }
-    .now_temp {
+    header .now_temp {
       top:10px;
     }
 }
@@ -63,7 +62,7 @@ body{
     body{
       font-size: 2px;
     }
-    .now_temp {
+    header .now_temp {
       top:5px;
     }
 }
