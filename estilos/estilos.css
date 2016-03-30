@@ -224,9 +224,9 @@ input {
 }
 
 header .busqueda{
+  position: absolute;
   top: 250px;
   right: 50px;
-  position: absolute;
 }
 
 @keyframes fadein {
