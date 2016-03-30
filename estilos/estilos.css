@@ -124,7 +124,7 @@ main{
   display:inline-block;
 	text-align: center;
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-	width: 81%;
+	width: 100%;
   color: white;
 }
 .section__content {
@@ -266,7 +266,7 @@ header .busqueda{
 
 
 .Dia{
-  
+
 }
 
 .section_forecast{
