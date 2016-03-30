@@ -70,7 +70,7 @@ main{
     width: auto;
 }
 
-@media only screen and (min-width: 37.5rem) {
+@media only screen and (min-width: 700px) {
     .weather__block {
         width: 45%;
 	      margin: 0%;
@@ -83,13 +83,12 @@ main{
 
 
 .wi, .weather_temperature {
-	font-size: 2rem;
+	font-size: 2em;
 	width: 100%;
 	text-align: center;
 }
 .weather_name {
 	font-weight: bold;
-	font-size: 20px;
 	font-size: 1.2rem;
 }
 .wi {
@@ -152,7 +151,7 @@ input {
   top: 120px;
   left: 50px;
   color:white;
-  font-size: 1000%;
+  font-size: 9em;
   font-family: fantasy;
 
   -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
@@ -193,7 +192,7 @@ input {
 
 .now_temp #js_w_munic{
   margin: 0;
-  font-size: 30rem;
+  font-size: 3em;
 }
 
 .now_temp #temp_big{
