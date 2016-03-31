@@ -101,11 +101,12 @@ app.procesaDatos_frcst = function() {
 }
 
 app.muestra = function() {
+  var archivoFlecha=determinaFlechaViento();
   $('#portada').attr("src",app.portada);
 
   $('#temp_big').html(app.temperatura + " ºC");
 
-  $('#flechaWin').attr("src",determinaFlechaViento());
+  $('#flechaWin').attr("src",archivoFlecha);
 
   $('#js_w_munic').html(app.municipio);
   $('#js_w_icon').attr("src",app.icono);
