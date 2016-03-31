@@ -6,6 +6,7 @@ var iconoHumedad = "./images/iconos/humedad.png";
 var iconoWind = "./images/iconos/wind.png";
 var iconoTemp = "./images/iconos/temp.png";
 var municipio = "Sevilla";
+var flecha = "";
 
 function asignaMunicipio(){
   municipio = $('#municipio').val();
@@ -104,6 +105,8 @@ app.muestra = function() {
 
   $('#temp_big').html(app.temperatura + " ºC");
 
+  $('#flechaWin').attr("src",determinaFlechaViento());
+
   $('#js_w_munic').html(app.municipio);
   $('#js_w_icon').attr("src",app.icono);
   $('#js_w_temp_icon').attr("src",iconoTemp);
@@ -137,4 +140,27 @@ function getDiaSemana(diaEN){
 function getMes(mesNum){
   var mes = ["Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"];
   return mes[mesNum];
+}
+
+function determinaFlechaViento(){
+  var dir="";
+  if (app.windDir >= 338 && app.windDir < 23){
+    dir = "N";
+  }else if (app.windDir >= 23 && app.windDir < 68){
+    dir = "N";
+  }else if (app.windDir >= 68 && app.windDir < 113){
+    dir = "N";
+  }else if (app.windDir >= 113 && app.windDir < 158){
+    dir = "N";
+  }else if (app.windDir >= 158 && app.windDir < 203){
+    dir = "N";
+  }else if (app.windDir >= 203 && app.windDir < 248){
+    dir = "N";
+  }else if (app.windDir >= 248 && app.windDir < 293){
+    dir = "N";
+  }else if (app.windDir >= 293 && app.windDir < 338){
+    dir = "N";
+  }
+  var archivo = "flecha" + dir +".png";
+  return archivo;
 }
