@@ -275,6 +275,19 @@ header .busqueda{
     to   { opacity: 1; }
 }
 
+.viento{
+  font-size: 3em;
+  color: white;
+  font-family: fantasy;
+  margin: 0;
+}
+
+#flechaWind{
+  position: absolute;
+  top: 213px;
+  left: 400px;
+}
+
 
 .Dia{
   display: table-row;
