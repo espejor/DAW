@@ -161,6 +161,5 @@ function determinaFlechaViento(){
   }else if (app.windDir >= 293 && app.windDir < 338){
     dir = "N";
   }
-  var archivo = "flecha" + dir +".png";
-  return archivo;
+  return "images/flecha" + dir +".png";
 }
