@@ -145,7 +145,7 @@ function getMes(mesNum){
 function determinaFlechaViento(){
   var dir="";
   var dirWind = parseInt(app.windDir);
-  if (dirWind >= 338 && dirWind < 23){
+  if ((dirWind >= 338 && dirWind <= 360) || (dirWind >= 0 && dirWind < 23)){
     dir = "N";
   }else if (dirWind >= 23 && dirWind < 68){
     dir = "N";
