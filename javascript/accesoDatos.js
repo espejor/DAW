@@ -150,19 +150,19 @@ function determinaFlechaViento(){
   if ((dirWind >= 338 && dirWind <= 360) || (dirWind >= 0 && dirWind < 23)){
     dir = "N";
   }else if (dirWind >= 23 && dirWind < 68){
-    dir = "N";
+    dir = "NE";
   }else if (dirWind >= 68 && dirWind < 113){
-    dir = "N";
+    dir = "E";
   }else if (dirWind >= 113 && dirWind < 158){
-    dir = "N";
+    dir = "SE";
   }else if (dirWind >= 158 && dirWind < 203){
-    dir = "N";
+    dir = "S";
   }else if (dirWind >= 203 && dirWind < 248){
-    dir = "N";
+    dir = "SW";
   }else if (dirWind >= 248 && dirWind < 293){
-    dir = "N";
+    dir = "W";
   }else if (dirWind >= 293 && dirWind < 338){
-    dir = "N";
+    dir = "NW";
   }
   return "images/flecha" + dir +".png";
 }

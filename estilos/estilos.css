@@ -280,8 +280,8 @@ header .busqueda{
   color: white;
   font-family: fantasy;
   position: absolute;
-  top: 213px;
-  left: 400px;
+  top: 2em;
+  left: 8em;
 }
 
 #js_w_windS{
