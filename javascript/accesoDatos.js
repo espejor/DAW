@@ -148,21 +148,21 @@ function determinaFlechaViento(){
   var dir="";
   var dirWind = parseInt(app.windDir);
   if ((dirWind >= 338 && dirWind <= 360) || (dirWind >= 0 && dirWind < 23)){
-    dir = "N";
-  }else if (dirWind >= 23 && dirWind < 68){
-    dir = "NE";
-  }else if (dirWind >= 68 && dirWind < 113){
-    dir = "E";
-  }else if (dirWind >= 113 && dirWind < 158){
-    dir = "SE";
-  }else if (dirWind >= 158 && dirWind < 203){
     dir = "S";
-  }else if (dirWind >= 203 && dirWind < 248){
+  }else if (dirWind >= 23 && dirWind < 68){
     dir = "SW";
+  }else if (dirWind >= 68 && dirWind < 113){
+    dir = "W";
+  }else if (dirWind >= 113 && dirWind < 158){
+    dir = "NW";
+  }else if (dirWind >= 158 && dirWind < 203){
+    dir = "N";
+  }else if (dirWind >= 203 && dirWind < 248){
+    dir = "NE";
   }else if (dirWind >= 248 && dirWind < 293){
     dir = "W";
   }else if (dirWind >= 293 && dirWind < 338){
-    dir = "NW";
+    dir = "SE";
   }
   return "images/flecha" + dir +".png";
 }
