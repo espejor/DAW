@@ -144,21 +144,22 @@ function getMes(mesNum){
 
 function determinaFlechaViento(){
   var dir="";
-  if (app.windDir >= 338 && app.windDir < 23){
+  var dirWind = parseInt(app.windDir);
+  if (dirWind >= 338 && dirWind < 23){
     dir = "N";
-  }else if (app.windDir >= 23 && app.windDir < 68){
+  }else if (dirWind >= 23 && dirWind < 68){
     dir = "N";
-  }else if (app.windDir >= 68 && app.windDir < 113){
+  }else if (dirWind >= 68 && dirWind < 113){
     dir = "N";
-  }else if (app.windDir >= 113 && app.windDir < 158){
+  }else if (dirWind >= 113 && dirWind < 158){
     dir = "N";
-  }else if (app.windDir >= 158 && app.windDir < 203){
+  }else if (dirWind >= 158 && dirWind < 203){
     dir = "N";
-  }else if (app.windDir >= 203 && app.windDir < 248){
+  }else if (dirWind >= 203 && dirWind < 248){
     dir = "N";
-  }else if (app.windDir >= 248 && app.windDir < 293){
+  }else if (dirWind >= 248 && dirWind < 293){
     dir = "N";
-  }else if (app.windDir >= 293 && app.windDir < 338){
+  }else if (dirWind >= 293 && dirWind < 338){
     dir = "N";
   }
   return "images/flecha" + dir +".png";
