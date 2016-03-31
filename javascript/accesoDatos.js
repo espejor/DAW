@@ -142,6 +142,7 @@ function getMes(mesNum){
   return mes[mesNum];
 }
 
+
 function determinaFlechaViento(){
   var dir="";
   var dirWind = parseInt(app.windDir);
