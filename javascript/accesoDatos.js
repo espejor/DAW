@@ -106,7 +106,7 @@ app.muestra = function() {
 
   $('#temp_big').html(app.temperatura + " ºC");
 
-  $('#flechaWin').attr("src",archivoFlecha);
+  $('#flechaWind').attr("src",archivoFlecha);
 
   $('#js_w_munic').html(app.municipio);
   $('#js_w_icon').attr("src",app.icono);
