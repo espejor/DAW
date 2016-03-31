@@ -279,14 +279,13 @@ header .busqueda{
   font-size: 3em;
   color: white;
   font-family: fantasy;
-  margin: 0;
   position: absolute;
   top: 213px;
   left: 400px;
 }
 
 #flechaWind{
-
+  margin: 0;
 }
 
 
