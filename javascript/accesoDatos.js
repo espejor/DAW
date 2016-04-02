@@ -61,7 +61,7 @@ app.procesaDatos = function() {
   app.windSpeed = (parseInt(app.windSpeed)).toString();
 
   app.windDir = app.datos.wind.deg;
-  if (!isNaN(parseInt(app.windDir)){
+  if (!isNaN(parseInt(app.windDir))){
     app.windDir = (parseInt(app.windDir)).toString();
   }else{
     app.windDir = "0";
