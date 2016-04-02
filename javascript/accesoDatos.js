@@ -28,7 +28,7 @@ app.cargaDatos = function() {
   }
 
   app.url = "http://api.openweathermap.org/data/2.5/weather?q=" + municipio + "&APPID=" + app.apikey + "&units=metric";
-  app.url_frcst = "http://api.openweathermap.org/data/2.5/forecast/daily?q=" + municipio + "&APPID=" + app.apikey + "&units=metric&cnt14";
+  app.url_frcst = "http://api.openweathermap.org/data/2.5/forecast/daily?q=" + municipio + "&APPID=" + app.apikey + "&units=metric&cnt7";
   $.ajax({
     url: app.url,
     success: function(data) {
@@ -61,8 +61,11 @@ app.procesaDatos = function() {
   app.windSpeed = (parseInt(app.windSpeed)).toString();
 
   app.windDir = app.datos.wind.deg;
-  app.windDir = (parseInt(app.windDir)).toString();
-
+  if (!isNaN(parseInt(app.windDir)){
+    app.windDir = (parseInt(app.windDir)).toString();
+  }else{
+    app.windDir = "0";
+  }
   app.humedad = app.datos.main.humidity;
   //var condicionIcono = app.datos.weather[0].icon;
   app.icono = "http://openweathermap.org/img/w/"+app.datos.weather[0].icon+".png";

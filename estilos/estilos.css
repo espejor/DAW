@@ -128,8 +128,8 @@ body{
 
 main{
   display: block;
-  background-color: #43547B;
-    margin:0;
+  background-color: black;
+  margin:0;
 }
 
 .section__main {
