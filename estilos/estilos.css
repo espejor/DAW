@@ -144,7 +144,7 @@ main{
   align-items: center;
 	width: 100%;
   padding-top: 5%;
-  font-size: 2rem;
+  font-size: 2em;
 }
 .weather__block {
 
@@ -161,7 +161,7 @@ main{
 }
 .weather_name {
 	font-weight: bold;
-	font-size: 1.2rem;
+	font-size: 1.2em;
 }
 .wi {
 	margin-bottom: 22px;
@@ -221,8 +221,8 @@ input {
 .now_temp{
   margin: 0;
   position: absolute;
-  top: 120px;
-  left: 50px;
+  top: 7em;
+  left: 3em;
   color:white;
   font-family: fantasy;
 
