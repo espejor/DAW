@@ -4,7 +4,7 @@ body{
   font-size: 16px;
 }
 
-@media only screen and (min-width: 1200px) {
+/*@media only screen and (min-width: 1200px) {
   header .busqueda{
     top:250px;
   }
@@ -15,104 +15,104 @@ body{
     right: 50px;
   }
 }
-
+*/
 
 @media only screen and (max-width: 1200px) {
     body{
       font-size: 14px;
     }
-    header .now_temp {
+    /*header .now_temp {
       top:100px;
     }
     header .busqueda{
       top:230px;
-    }
+    }*/
 }
 
 @media only screen and (max-width: 1100px) {
     body{
       font-size: 12px;
     }
-    header .now_temp {
+    /*header .now_temp {
       top:100px;
     }
     header .busqueda{
       top:200px;
-    }
+    }*/
 }
 
 @media only screen and (max-width: 1000px) {
     body{
       font-size: 10px;
     }
-    header .now_temp {
+    /*header .now_temp {
       top:100px;
     }
     header .busqueda{
       top:180px;
-    }
+    }*/
 }
 
 @media only screen and (max-width: 900px) {
     body{
       font-size: 8px;
     }
-    header .now_temp {
+    /*header .now_temp {
       top:100px;
     }
     header .busqueda{
       top:150px;
-    }
+    }*/
 }
 
 @media only screen and (max-width: 800px) {
     body{
       font-size: 7px;
     }
-    header .now_temp {
+    /*header .now_temp {
       top:90px;
     }
     header .busqueda{
       top:130px;
-    }
+    }*/
 }
 
 @media only screen and (max-width: 700px) {
     body{
       font-size: 6px;
     }
-    header .now_temp {
+    /*header .now_temp {
       top:70px;
     }
     header .busqueda {
       top:110px;
       right: 25px;
-    }
+    }*/
 }
 
 @media only screen and (max-width: 600px) {
     body{
       font-size: 5px;
     }
-    header .now_temp {
+    /*header .now_temp {
       top:50px;
     }
     header .busqueda{
       top:65px;
       right: 5px;
-    }
+    }*/
 }
 
 @media only screen and (max-width: 400px) {
     body{
       font-size: 4px;
     }
-    header .now_temp {
+    /*header .now_temp {
       top:40px;
     }
     header .busqueda{
       top:150px;
-    }
+    }*/
 }
 
 #municipio, #consultar{
@@ -172,8 +172,8 @@ footer p{
     background-color : #000 ;
     color:#fff;
     font-family: arial, verdana, sans-serif;
-    font-size: 12px;
-    line-height : 44px;
+    font-size: .9em;
+    line-height : 3em;
     text-align : center;
 }
 
@@ -199,18 +199,18 @@ aside section header h3{
 	padding: 2em 0em 0em 1em;
 }
 input {
-  padding: .4em;
-  border: 2px solid #eae1c0;
+  padding: .2em;
+  /*border: 2px solid #eae1c0;*/
   border-radius: 5px;
-  box-shadow: rgba(0,0,0,.5) 1px 1px 1px 1px inset;
+  /*box-shadow: rgba(0,0,0,.5) 1px 1px 1px 1px inset;*/
   background: #fff;
-  margin: .9em;
+  margin: .3em;
 }
 
 .cabecera_frcst,.icon_frcst, .tmp_frcst,.wind_frcst,.humedad_frcst{
   background-color: black;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: .5em;
+  padding-bottom: .5em;
   border: 1px;
   border-color: white;
   border-style: solid;
@@ -244,6 +244,8 @@ input {
 
 header .busqueda{
   position: absolute;
+  top: 17em;
+  right: 3em;
 }
 
 @keyframes fadein {
