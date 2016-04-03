@@ -128,8 +128,8 @@ app.muestra_frcst = function() {
     $('#dia_mes_frcst_'+j).html(app.fecha_frcst[i].getDate() + " ");
     $('#mes_frcst_'+j).html(getMes(app.fecha_frcst[i].getMonth()));
     $('#icon_frcst_'+j).attr("src",app.icono_frcst[i]);
-    $('#tmp_frcst_max_'+j).html(app.temp_max_frcst[i] + " ºC <");
-    $('#tmp_frcst_min_'+j).html("> " + app.temp_min_frcst[i] + " ºC");
+    $('#tmp_frcst_max_'+j).html(app.temp_max_frcst[i] + " ºC");
+    $('#tmp_frcst_min_'+j).html(app.temp_min_frcst[i] + " ºC");
     $('#wind_frcst_vel_'+j).html(app.windSpeed_frcst[i] + " m/s");
     $('#wind_frcst_dir_'+j).html(app.windDir_frcst[i] + " º");
     $('#humedad_frcst_'+j).html(app.humedad_frcst[i] + " %");
