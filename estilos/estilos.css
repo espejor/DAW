@@ -250,8 +250,10 @@ header .busqueda{
   border-color: black;
 }
 .tmp_frcst_max{
+  margin:0;
   color:red;
 }
 .tmp_frcst_min{
-  color:blue;
+  margin: 0;
+  color:deepskyblue;
 }
