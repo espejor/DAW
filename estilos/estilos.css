@@ -272,3 +272,6 @@ header .busqueda{
   margin: 0;
   color:deepskyblue;
 }
+.wind_frcst_vel, .wind_frcst_dir{
+  margin: 0;
+}
