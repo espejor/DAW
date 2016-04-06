@@ -46,7 +46,8 @@ app.cargaDatos = function() {
       app.procesaDatos_frcst();
     },
     error: function() {
-      alert("Ups! No puedo obtener información de la previsión a una semana");
+//      alert("Ups! No puedo obtener información de la previsión a una semana");
+      $('#error').load("error.html");
     }
   });
 }
