@@ -176,7 +176,6 @@ input {
   left: 3em;
   color:white;
   font-family: serif;
-  font-family: fantasy;
 
   -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
    -moz-animation: fadein 3s; /* Firefox < 16 */
@@ -233,7 +232,6 @@ header .busqueda{
   font-size: 3em;
   color: white;
   font-family: serif;
-  font-family:serif;;
   position: absolute;
   top: 3em;
   left: 8em;
