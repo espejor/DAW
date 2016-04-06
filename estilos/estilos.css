@@ -160,8 +160,8 @@ input {
 
 .cabecera_frcst,.icon_frcst, .tmp_frcst,.wind_frcst,.humedad_frcst{
   background-color: black;
-  padding-top: .5em;
-  padding-bottom: .5em;
+  padding-top: .1em;
+  padding-bottom: .1em;
   border: 1px;
   border-color: white;
   border-style: solid;
@@ -233,10 +233,10 @@ header .busqueda{
   font-size: 3em;
   color: white;
   font-family: serif;
-  font-family: fantasy;
+  font-family:serif;;
   position: absolute;
   top: 3em;
-  left: 7em;
+  left: 8em;
 }
 
 #flechaWind{
