@@ -112,9 +112,8 @@ app.muestra = function() {
   //$('#flechaWind').attr("src",archivoFlecha);
   //$('#flechaWind').attr("src","images/flechaN.png");
   $('flechaWind').style.transform="rotate(" + app.windDir + ")";
-  $('flechaWind').style.ms-transform="rotate(" + app.windDir + ")";
-  $('flechaWind').style.webkit-transform="rotate(" + app.windDir + ")";
-  $('flechaWind').style.moz-transform="rotate(" + app.windDir + ")";
+  $('flechaWind').style.msTransform="rotate(" + app.windDir + ")";
+  $('flechaWind').style.WebkitTransform="rotate(" + app.windDir + ")";
   $('#js_w_munic').html(app.municipio);
   $('#js_w_icon').attr("src",app.icono);
   $('#js_w_temp_icon').attr("src",iconoTemp);
