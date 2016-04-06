@@ -43,12 +43,13 @@ app.cargaDatos = function() {
     url: app.url_frcst,
     success: function(data) {
       app.datos_frcst = data;
-      $('#forecast').load("section_forecast.html");
+//      $('#forecast').load("section_forecast.html");
       app.procesaDatos_frcst();
     },
     error: function() {
 //      alert("Ups! No puedo obtener información de la previsión a una semana");
       $('#error').load("error.html");
+      $('#section_forecast').css("border","0");
     }
   });
 }
@@ -150,10 +151,6 @@ function getDiaSemana(diaEN){
 function getMes(mesNum){
   var mes = ["Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"];
   return mes[mesNum];
-}
-
-function rotaflecha(){
-
 }
 
 function determinaFlechaViento(){
