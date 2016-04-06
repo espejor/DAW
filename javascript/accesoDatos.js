@@ -111,9 +111,10 @@ app.muestra = function() {
 
   //$('#flechaWind').attr("src",archivoFlecha);
   //$('#flechaWind').attr("src","images/flechaN.png");
-  $('#flechaWind').style.transform="rotate(" + app.windDir + "deg)";
-  $('#flechaWind').style.msTransform="rotate(" + app.windDir + "deg)";
-  $('#flechaWind').style.WebkitTransform="rotate(" + app.windDir + "deg)";
+  var funcionRotar = "rotate(" + app.windDir + "deg)";
+  $('#flechaWind').style.transform=funcionRotar;
+  $('#flechaWind').style.msTransform=funcionRotar;
+  $('#flechaWind').style.WebkitTransform=funcionRotar;
   $('#js_w_munic').html(app.municipio);
   $('#js_w_icon').attr("src",app.icono);
   $('#js_w_temp_icon').attr("src",iconoTemp);
