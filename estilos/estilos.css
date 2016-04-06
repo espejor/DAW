@@ -25,33 +25,46 @@ body{
 
 @media only screen and (max-width: 900px) {
     body{
-      font-size: 8px;
+      font-size: 9px;
     }
 }
 
 @media only screen and (max-width: 800px) {
     body{
-      font-size: 7px;
+      font-size: 8px;
     }
 }
 
 @media only screen and (max-width: 700px) {
     body{
-      font-size: 6px;
+      font-size: 7px;
     }
 }
 
 @media only screen and (max-width: 600px) {
     body{
-      font-size: 5px;
+      font-size: 6px;
     }
 }
 
 @media only screen and (max-width: 400px) {
     body{
+      font-size: 5px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    body{
       font-size: 4px;
     }
 }
+
+@media only screen and (max-width: 200px) {
+    body{
+      font-size: 3px;
+    }
+}
+
 
 #municipio, #consultar{
   font-size: 1.7em;
@@ -162,6 +175,7 @@ input {
   top: 7em;
   left: 3em;
   color:white;
+  font-family: serif;
   font-family: fantasy;
 
   -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
@@ -218,10 +232,11 @@ header .busqueda{
 .viento{
   font-size: 3em;
   color: white;
+  font-family: serif;
   font-family: fantasy;
   position: absolute;
   top: 3em;
-  left: 10em;
+  left: 7em;
 }
 
 #flechaWind{
