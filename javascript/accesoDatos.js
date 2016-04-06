@@ -49,9 +49,18 @@ app.cargaDatos = function() {
     error: function() {
 //      alert("Ups! No puedo obtener información de la previsión a una semana");
       $('#error').load("error.html");
-      $('div.cabecera_frcst').css("border","0");
+      borraTabla();
     }
   });
+}
+
+function borraTabla(){
+  $('div.cabecera_frcst').css("border","0");
+  $('div.icon_frcst').css("border","0");
+  $('div.tmp_frcst').css("border","0");
+  $('div.win_frcst').css("border","0");
+  $('div.humedad_frcst').css("border","0");
+
 }
 
 app.procesaDatos = function() {
