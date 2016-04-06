@@ -49,7 +49,7 @@ app.cargaDatos = function() {
     error: function() {
 //      alert("Ups! No puedo obtener información de la previsión a una semana");
       $('#error').load("error.html");
-      $('#section_forecast').css("border","0");
+      $('div.cabecera_frcst').css("border","0");
     }
   });
 }
