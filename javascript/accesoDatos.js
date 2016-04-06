@@ -57,8 +57,9 @@ app.cargaDatos = function() {
 function borraTabla(){
   $('div.cabecera_frcst').css("border","0");
   $('div.icon_frcst').css("border","0");
+  $('div.icon_frcst').css("background-color","");
   $('div.tmp_frcst').css("border","0");
-  $('div.win_frcst').css("border","0");
+  $('div.wind_frcst').css("border","0");
   $('div.humedad_frcst').css("border","0");
 
 }
