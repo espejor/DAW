@@ -61,7 +61,7 @@ function borraTabla(){
   // $('div.tmp_frcst').css("border","0");
   // $('div.wind_frcst').css("border","0");
   // $('div.humedad_frcst').css("border","0");
-  $('div.section_forecast').html();
+  $('div.section_forecast').html("");
 }
 
 app.procesaDatos = function() {
