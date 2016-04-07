@@ -23,7 +23,7 @@ function getLocation(){
 function cargaPosicion(position) {
     lat = position.coords.latitude;
     long = position.coords.longitude;
-    $('#localizador').html(lat.toString + long.toString);
+    $('#localizador').html(lat + long);
 }
 
 function falloPosicion(objPositionError){
