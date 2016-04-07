@@ -46,7 +46,6 @@ app.cargaDatos = function() {
     success: function(data) {
       app.datos_frcst = data;
       app.procesaDatos_frcst();
-      $('div.section_forecast').load("section_forecast.html");
       borraError();
     },
     error: function() {
