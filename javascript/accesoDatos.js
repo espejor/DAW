@@ -8,6 +8,27 @@ var iconoTemp = "./images/iconos/temp.png";
 var municipio = "Sevilla";
 var flecha = "";
 
+
+//---------- Geolocalización
+
+var long;
+var lat;
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(cargaPosicion);
+    } else {
+        //x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function cargaPosicion(position) {
+    lat = position.coords.latitude;
+    long = position.coords.longitude;
+}
+
+//---------- FIN Geoloacalización
+
 function asignaMunicipio(){
   municipio = $('#municipio').val();
   app.cargaDatos();
@@ -27,7 +48,11 @@ app.cargaDatos = function() {
     municipio = $('#municipio').val();
   }
 
-  app.url = "http://api.openweathermap.org/data/2.5/weather?q=" + municipio + "&APPID=" + app.apikey + "&units=metric";
+  if (lat != NaN && long != NaN){
+    app.url = "http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + long + "&APPID=" + app.apikey + "&units=metric";
+  } else{
+    app.url = "http://api.openweathermap.org/data/2.5/weather?q=" + municipio + "&APPID=" + app.apikey + "&units=metric";
+  }
   $.ajax({
     url: app.url,
     success: function(data) {
