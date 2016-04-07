@@ -45,8 +45,8 @@ app.cargaDatos = function() {
     url: app.url_frcst,
     success: function(data) {
       app.datos_frcst = data;
-      $('div.section_forecast').load("section_forecast.html");
       app.procesaDatos_frcst();
+      $('div.section_forecast').load("section_forecast.html");
       borraError();
     },
     error: function() {
