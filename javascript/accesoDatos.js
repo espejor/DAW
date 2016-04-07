@@ -21,9 +21,9 @@ function getLocation(){
 
 
 function cargaPosicion(position) {
-    lat = position.coords.latitude;
-    long = position.coords.longitude;
-    $('#localizador').html(lat + long);
+  lat = position.coords.latitude;
+  long = position.coords.longitude;
+  app.cargaDatos();
 }
 
 function falloPosicion(objPositionError){
