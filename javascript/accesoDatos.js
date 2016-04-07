@@ -14,13 +14,12 @@ var flecha = "";
 var long;
 var lat;
 
-function getLocation() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(cargaPosicion);
     } else {
         //x.innerHTML = "Geolocation is not supported by this browser.";
     }
-}
+
 
 function cargaPosicion(position) {
     lat = position.coords.latitude;
