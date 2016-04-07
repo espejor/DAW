@@ -25,14 +25,26 @@ function cargaPosicion(position) {
     long = position.coords.longitude;
 }
 
-function falloPosicion(){
-  alert ("error de posicionamiento");
+function falloPosicion(objPositionError){
+  switch (objPositionError.code){
+    case objPositionError.PERMISSION_DENIED:
+      alert("No se ha permitido el acceso a la posición del usuario.");
+    break;
+    case objPositionError.POSITION_UNAVAILABLE:
+      alert("No se ha podido acceder a la información de su posición.");
+    break;
+    case objPositionError.TIMEOUT:
+      alert("El servicio ha tardado demasiado tiempo en responder.");
+    break;
+    default:
+      alert("Error desconocido.");
+  }
 }
 
 var geoData = {
   enableHighAccuracy: false,
   maximumAge        : 30000,
-  timeout           : 0
+  timeout           : 10
 };
 
 //---------- FIN Geoloacalización
