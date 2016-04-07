@@ -62,7 +62,6 @@ function asignaMunicipio(){
 
 $(document).ready(function(){
   $('#consultar').click(asignaMunicipio);
-  $('#recargarFrcst').click(app.cargaDatosFrcst());
   app.apikey = "05b19ab20e25b29516d13983b8491391";
   app.municipio = "Sevilla";
   getLocation();
@@ -111,6 +110,7 @@ app.cargaDatosFrcst = function() {
     error: function() {
 //      alert("Ups! No puedo obtener información de la previsión a una semana");
       $('#error').load("errorFrcst.html");
+      $('#recargarFrcst').click(app.cargaDatosFrcst());
       borraTabla();
     }
   });
