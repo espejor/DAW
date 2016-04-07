@@ -15,7 +15,7 @@ var long;
 var lat;
 function getLocation(){
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(cargaPosicion,falloPosicion,geoData);
+        navigator.geolocation.watchPosition(cargaPosicion,falloPosicion,geoData);
     }
   }
 
