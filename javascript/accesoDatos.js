@@ -61,7 +61,8 @@ function asignaMunicipio(){
 
 
 $(document).ready(function(){
-  $("#consultar").click(asignaMunicipio);
+  $('#consultar').click(asignaMunicipio);
+  $('#recargarFrcst').click(app.cargaDatosFrcst());
   app.apikey = "05b19ab20e25b29516d13983b8491391";
   app.municipio = "Sevilla";
   getLocation();
