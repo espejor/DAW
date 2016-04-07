@@ -274,7 +274,7 @@ header .busqueda{
   margin: 0;
 }
 
-.errorMsg{
+p .errorMsg{
   text-align: center;
   padding: 1em;
 }
