@@ -124,7 +124,7 @@ app.muestra = function() {
 
   //$('#flechaWind').attr("src",archivoFlecha);
   //$('#flechaWind').attr("src","images/flechaN.png");
-  var funcionRotar = "rotate(" + app.windDir + "deg)";
+  var funcionRotar = "rotate(" + (parseInt(app.windDir) + 180).toString() + "deg)";
   $('#flechaWind').css("transform",funcionRotar);
   $('#flechaWind').css("msTransform",funcionRotar);
   $('#flechaWind').css("WebkitTransform",funcionRotar);
