@@ -13,12 +13,13 @@ var flecha = "";
 
 var long;
 var lat;
-
+function getLocation(){
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(cargaPosicion);
     } else {
         //x.innerHTML = "Geolocation is not supported by this browser.";
     }
+  }
 
 
 function cargaPosicion(position) {
@@ -38,6 +39,7 @@ $(document).ready(function(){
   $("#consultar").click(asignaMunicipio);
   app.apikey = "05b19ab20e25b29516d13983b8491391";
   app.municipio = "Sevilla";
+  getLocation();
   app.cargaDatos();
 });
 
