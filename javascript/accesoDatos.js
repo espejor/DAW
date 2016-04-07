@@ -47,7 +47,7 @@ app.cargaDatos = function() {
     municipio = $('#municipio').val();
   }
 
-  if (lat != NaN && long != NaN){
+  if (lat && long){
     app.url = "http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + long + "&APPID=" + app.apikey + "&units=metric";
   } else{
     app.url = "http://api.openweathermap.org/data/2.5/weather?q=" + municipio + "&APPID=" + app.apikey + "&units=metric";
