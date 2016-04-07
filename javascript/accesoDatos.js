@@ -50,7 +50,7 @@ app.cargaDatos = function() {
     },
     error: function() {
 //      alert("Ups! No puedo obtener información de la previsión a una semana");
-      $('#error').load("error.html");
+      $('#error').load("errorFrcst.html");
       borraTabla();
     }
   });
