@@ -51,6 +51,8 @@ var geoData = {
 
 function asignaMunicipio(){
   municipio = $('#municipio').val();
+  lat = null;
+  long = null;
   app.cargaDatos();
 }
 
