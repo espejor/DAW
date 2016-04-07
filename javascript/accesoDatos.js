@@ -32,7 +32,7 @@ function falloPosicion(){
 var geoData = {
   enableHighAccuracy: false,
   maximumAge        : 30000,
-  timeout           : 27000
+  timeout           : 0
 };
 
 //---------- FIN Geoloacalización
