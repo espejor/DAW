@@ -172,7 +172,7 @@ input {
 .now_temp{
   margin: 0;
   position: absolute;
-  top: 1em;
+  bottom: 1em;
   left: 3em;
   color:white;
   font-family: serif;
@@ -236,7 +236,7 @@ header .busqueda{
   color: white;
   font-family: serif;
   position: absolute;
-  top: 2em;
+  bottom: 2em;
   left: 9em;
 }
 
@@ -311,5 +311,9 @@ nav ul li{
 }
 
 nav ul li a:hover {
-    color:#000;
+    color:#ccc;
+}
+
+nav ul li a {
+    color:white;
 }
