@@ -89,7 +89,12 @@ app.cargaDatos = function() {
       borraTabla();
     }
   });
-  app.url_frcst = "http://api.openweathermap.org/data/2.5/forecast/daily?q=" + municipio + "&APPID=" + app.apikey + "&units=metric&cnt7";
+  if (lat && long){
+    app.url_frcst = "http://api.openweathermap.org/data/2.5/forecast/daily?lat=" + lat + "&lon=" + long + "&APPID=" + app.apikey + "&units=metric&cnt7";
+  }else{
+    app.url_frcst = "http://api.openweathermap.org/data/2.5/forecast/daily?q=" + municipio + "&APPID=" + app.apikey + "&units=metric&cnt7";
+  }
+
   $.ajax({
     url: app.url_frcst,
     success: function(data) {
