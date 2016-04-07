@@ -15,7 +15,7 @@ var long;
 var lat;
 function getLocation(){
     if (navigator.geolocation) {
-        navigator.geolocation.watchPosition(cargaPosicion,falloPosicion,geoData);
+        navigator.geolocation.getCurrentPosition(cargaPosicion,falloPosicion,geoData);
     }
   }
 
@@ -24,6 +24,7 @@ function cargaPosicion(position) {
   lat = position.coords.latitude;
   long = position.coords.longitude;
   app.cargaDatos();
+  app.cargaDatosFrcst();
 }
 
 function falloPosicion(objPositionError){
@@ -55,6 +56,7 @@ function asignaMunicipio(){
   lat = null;
   long = null;
   app.cargaDatos();
+  app.cargaDatosFrcst();
 }
 
 
@@ -64,6 +66,7 @@ $(document).ready(function(){
   app.municipio = "Sevilla";
   getLocation();
   app.cargaDatos();
+  app.cargaDatosFrcst();
 });
 
 app.cargaDatos = function() {
@@ -89,12 +92,14 @@ app.cargaDatos = function() {
       borraTabla();
     }
   });
+}
+
+app.cargaDatosFrcst = function() {
   if (lat && long){
     app.url_frcst = "http://api.openweathermap.org/data/2.5/forecast/daily?lat=" + lat + "&lon=" + long + "&APPID=" + app.apikey + "&units=metric&cnt7";
   }else{
     app.url_frcst = "http://api.openweathermap.org/data/2.5/forecast/daily?q=" + municipio + "&APPID=" + app.apikey + "&units=metric&cnt7";
   }
-
   $.ajax({
     url: app.url_frcst,
     success: function(data) {
