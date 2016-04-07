@@ -33,9 +33,11 @@ app.cargaDatos = function() {
     success: function(data) {
       app.datos = data;
       app.procesaDatos();
+      borraError();
     },
     error: function() {
-      alert("Ups! No puedo obtener información de la API");
+      $('#error').load("error.html");
+      borraTabla();
     }
   });
   app.url_frcst = "http://api.openweathermap.org/data/2.5/forecast/daily?q=" + municipio + "&APPID=" + app.apikey + "&units=metric&cnt7";

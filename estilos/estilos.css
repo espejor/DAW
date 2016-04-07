@@ -172,7 +172,7 @@ input {
 .now_temp{
   margin: 0;
   position: absolute;
-  top: 4em;
+  top: 2em;
   left: 3em;
   color:white;
   font-family: serif;
@@ -272,4 +272,9 @@ header .busqueda{
 }
 .wind_frcst_vel, .wind_frcst_dir{
   margin: 0;
+}
+
+.errorMsg{
+  text-align: center;
+  padding: 1em;
 }
