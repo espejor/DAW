@@ -110,7 +110,7 @@ app.cargaDatosFrcst = function() {
     error: function() {
 //      alert("Ups! No puedo obtener información de la previsión a una semana");
       $('#error').load("errorFrcst.html");
-      $('#recargarFrcst').click(app.cargaDatosFrcst());
+//      $('#recargarFrcst').click(app.cargaDatosFrcst());
       borraTabla();
     }
   });
