@@ -15,14 +15,25 @@ var long;
 var lat;
 function getLocation(){
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(function (position) {
-            lat = position.coords.latitude;
-            long = position.coords.longitude;
-        });
+        navigator.geolocation.getCurrentPosition(cargaPosicion,falloPosicion,geoData);
     }
   }
 
 
+function cargaPosicion(position) {
+    lat = position.coords.latitude;
+    long = position.coords.longitude;
+}
+
+function falloPosicion(){
+  alert ("error de posicionamiento");
+}
+
+var geoData = {
+  enableHighAccuracy: false,
+  maximumAge        : 30000,
+  timeout           : 27000
+};
 
 //---------- FIN Geoloacalización
 
