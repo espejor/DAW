@@ -70,6 +70,7 @@ $(document).ready(function(){
   $('#consultar').click(asignaMunicipio);
   $('#home').click(cargaChunks);
   $('#ver_frcst').click(app.cargaDatosFrcst);
+  $('#buscar_en_mapa').click(crearMapa);
 //  $('#icon_week').bind("click",app.cargaDatosFrcst());
   // Cargar datos meteorológicos de la portada
   getLocation();
@@ -270,25 +271,15 @@ function getMes(mesNum){
   return mes[mesNum];
 }
 
-// function determinaFlechaViento(){
-//   var dir="";
-//   var dirWind = parseInt(app.windDir);
-//   if ((dirWind >= 338 && dirWind <= 360) || (dirWind >= 0 && dirWind < 23)){
-//     dir = "S";
-//   }else if (dirWind >= 23 && dirWind < 68){
-//     dir = "SW";
-//   }else if (dirWind >= 68 && dirWind < 113){
-//     dir = "W";
-//   }else if (dirWind >= 113 && dirWind < 158){
-//     dir = "NW";
-//   }else if (dirWind >= 158 && dirWind < 203){
-//     dir = "N";
-//   }else if (dirWind >= 203 && dirWind < 248){
-//     dir = "NE";
-//   }else if (dirWind >= 248 && dirWind < 293){
-//     dir = "W";
-//   }else if (dirWind >= 293 && dirWind < 338){
-//     dir = "SE";
-//   }
-//   return "images/flecha" + dir +".png";
-// }
+function crearMapa(){
+  var latlng = new google.maps.LatLng(lat,long);
+  var myOptions = {
+    zoom: 15,
+    center: latlng,
+    mapTypeControl: false,
+    navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+
+  var map = new google.maps.Map($('#contenido'), myOptions);
+}
