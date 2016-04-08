@@ -275,9 +275,9 @@ function crearMapa(){
   // Create a map object and specify the DOM element for display.
   $('#contenido').css("height","100%");
   $('#contenido').css("width","100%");
-  var map = new google.maps.Map(document.getElementById('contenido'), {
-    center: {lat: parseFloat(latitud), lng: parseFloat(longitud)},
-    scrollwheel: false,
-    zoom: 8
-  });
+  var latlon = position.coords.latitude + "," + position.coords.longitude;
+
+  var img_url = "http://maps.googleapis.com/maps/api/staticmap?center="
+  +latlon+"&zoom=14&size=400x300&sensor=false";
+  document.getElementById("contenido").innerHTML = "<img src='"+img_url+"'>";
 }
