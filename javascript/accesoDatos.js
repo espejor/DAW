@@ -275,7 +275,7 @@ function crearMapa(){
   // Create a map object and specify the DOM element for display.
   $('#contenido').css("height","100%");
   $('#contenido').css("width","100%");
-  var latlon = position.coords.latitude + "," + position.coords.longitude;
+  var latlon = latitud + "," + longitud;
 
   var img_url = "http://maps.googleapis.com/maps/api/staticmap?center="
   +latlon+"&zoom=14&size=400x300&sensor=false";
