@@ -326,11 +326,11 @@ nav ul li a {
     padding:1em;
 }
 
-dev #iconos {
-  
+#iconos {
+
 }
 
-dev #iconos .icon_big{
+.icon_big{
   width: 15em;
   height: 15em;
 }
