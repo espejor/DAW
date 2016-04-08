@@ -249,8 +249,8 @@ app.muestra_frcst = function() {
             "<p class= 'wind_frcst_vel' id='wind_frcst_vel_" + i + "'>" + app.windSpeed_frcst[i] + " m/s</p>" +
             "<p class= 'wind_frcst_dir' id='wind_frcst_dir_" + i + "'>" + app.windDir_frcst[i] + " º</p>" +
         "</div>" +
-        "<div class='humedad_frcst'>"
-          "<span id='humedad_frcst_" + i + "'>" + app.humedad_frcst[i] + " %</span>"
+        "<div class='humedad_frcst'>" +
+          "<span id='humedad_frcst_" + i + "'>" + app.humedad_frcst[i] + " %</span>" +
         "</div>" +
       "</div>"
     );
