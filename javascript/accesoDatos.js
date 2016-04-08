@@ -227,7 +227,8 @@ app.muestra_frcst2 = function() {
 
 app.muestra_frcst = function() {
   //$('#contenido').load("section_forecast.html");
-  $('#contenido').html(
+  $('#contenido').html("");
+  $('#contenido').append(
     "<div clas s='section_forecast'><div class='section_content_frcst'>");
   for (i=0;i<7;i++){
     var j = i.toString();
