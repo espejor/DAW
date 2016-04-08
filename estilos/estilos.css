@@ -325,3 +325,12 @@ nav ul li a {
     display:block;
     padding:1em;
 }
+
+dev #iconos {
+  
+}
+
+dev #iconos .icon_big{
+  width: 15em;
+  height: 15em;
+}
