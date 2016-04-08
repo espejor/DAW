@@ -11,8 +11,8 @@ var flecha = "";
 
 //---------- Geolocalización
 
-var long;
-var lat;
+var longitud;
+var latitud;
 function getLocation(){
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(cargaPosicion,falloPosicion,geoData);
@@ -21,8 +21,8 @@ function getLocation(){
 
 
 function cargaPosicion(position) {
-  lat = position.coords.latitude;
-  long = position.coords.longitude;
+  latitud = position.coords.latitude;
+  longitud = position.coords.longitude;
   app.cargaDatos();
 //  app.cargaDatosFrcst();
 }
@@ -53,8 +53,8 @@ var geoData = {
 
 function asignaMunicipio(){
   municipio = $('#municipio').val();
-  lat = null;
-  long = null;
+  latitud = null;
+  longitud = null;
   app.cargaDatos();
 //  app.cargaDatosFrcst();
 }
@@ -88,8 +88,8 @@ app.cargaDatos = function() {
     municipio = $('#municipio').val();
   }
 
-  if (lat && long){
-    app.url = "http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + long + "&APPID=" + app.apikey + "&units=metric";
+  if (latitud && longitud){
+    app.url = "http://api.openweathermap.org/data/2.5/weather?lat=" + latitud + "&lon=" + longitud + "&APPID=" + app.apikey + "&units=metric";
   } else{
     app.url = "http://api.openweathermap.org/data/2.5/weather?q=" + municipio + "&APPID=" + app.apikey + "&units=metric";
   }
@@ -108,8 +108,8 @@ app.cargaDatos = function() {
 }
 
 app.cargaDatosFrcst = function() {
-  if (lat && long){
-    app.url_frcst = "http://api.openweathermap.org/data/2.5/forecast/daily?lat=" + lat + "&lon=" + long + "&APPID=" + app.apikey + "&units=metric&cnt7";
+  if (latitud && longitud){
+    app.url_frcst = "http://api.openweathermap.org/data/2.5/forecast/daily?lat=" + latitud + "&lon=" + longitud + "&APPID=" + app.apikey + "&units=metric&cnt7";
   }else{
     app.url_frcst = "http://api.openweathermap.org/data/2.5/forecast/daily?q=" + municipio + "&APPID=" + app.apikey + "&units=metric&cnt7";
   }
@@ -274,7 +274,7 @@ function getMes(mesNum){
 function crearMapa(){
   // Create a map object and specify the DOM element for display.
   var map = new google.maps.Map(document.getElementById('contenido'), {
-    center: {lat: lat, lng: long},
+    center: {lat: latitud, lng: longitud},
     scrollwheel: false,
     zoom: 8
   });
