@@ -24,7 +24,7 @@ function cargaPosicion(position) {
   lat = position.coords.latitude;
   long = position.coords.longitude;
   app.cargaDatos();
-  app.cargaDatosFrcst();
+//  app.cargaDatosFrcst();
 }
 
 function falloPosicion(objPositionError){
@@ -56,7 +56,7 @@ function asignaMunicipio(){
   lat = null;
   long = null;
   app.cargaDatos();
-  app.cargaDatosFrcst();
+//  app.cargaDatosFrcst();
 }
 
 
