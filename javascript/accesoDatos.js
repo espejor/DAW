@@ -286,8 +286,8 @@ function crearMapa(){
 
   var map = new google.maps.Map(document.getElementById("contenido"), myOptions);
   var marker = new google.maps.Marker({position:latlon,map:map,title:"You are here!"});
-  map.addListener('click', function() {
-    var coordenadas = map.getCenter();
+  map.addListener('click', function(e) {
+    var coordenadas = e.latLng();
     latitud = coordenadas.lat();
     longitud = coordenadas.lng();
     app.cargaDatos();
