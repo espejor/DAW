@@ -61,17 +61,22 @@ function asignaMunicipio(){
 
 
 $(document).ready(function(){
-  $('#consultar').click(asignaMunicipio);
-  cargaChunks();
+  // Variables de inico
   app.apikey = "05b19ab20e25b29516d13983b8491391";
   app.municipio = "Sevilla";
+  // Asignación de manehadores de eventos
+  $('#consultar').click(asignaMunicipio);
+
+  // Cargar contenido principal de la página
+  cargaChunks();
+  // Cargar datos meteorológicos de la portada
   getLocation();
   app.cargaDatos();
-  app.cargaDatosFrcst();
+//  app.cargaDatosFrcst();
 });
 
 function cargaChunks(){
-  $('#iconos').load("iconos.html");
+  $('#contenido').load("iconos.html");
 }
 
 app.cargaDatos = function() {
@@ -204,6 +209,7 @@ app.muestra = function() {
   $('#js_w_humedad').html(app.humedad + " %");
   $('#js_w_humedad_Icon').attr("src",iconoHumedad);
 }
+
 app.muestra_frcst = function() {
   for (i=0;i<7;i++){
     var j = i.toString();
@@ -229,25 +235,25 @@ function getMes(mesNum){
   return mes[mesNum];
 }
 
-function determinaFlechaViento(){
-  var dir="";
-  var dirWind = parseInt(app.windDir);
-  if ((dirWind >= 338 && dirWind <= 360) || (dirWind >= 0 && dirWind < 23)){
-    dir = "S";
-  }else if (dirWind >= 23 && dirWind < 68){
-    dir = "SW";
-  }else if (dirWind >= 68 && dirWind < 113){
-    dir = "W";
-  }else if (dirWind >= 113 && dirWind < 158){
-    dir = "NW";
-  }else if (dirWind >= 158 && dirWind < 203){
-    dir = "N";
-  }else if (dirWind >= 203 && dirWind < 248){
-    dir = "NE";
-  }else if (dirWind >= 248 && dirWind < 293){
-    dir = "W";
-  }else if (dirWind >= 293 && dirWind < 338){
-    dir = "SE";
-  }
-  return "images/flecha" + dir +".png";
-}
+// function determinaFlechaViento(){
+//   var dir="";
+//   var dirWind = parseInt(app.windDir);
+//   if ((dirWind >= 338 && dirWind <= 360) || (dirWind >= 0 && dirWind < 23)){
+//     dir = "S";
+//   }else if (dirWind >= 23 && dirWind < 68){
+//     dir = "SW";
+//   }else if (dirWind >= 68 && dirWind < 113){
+//     dir = "W";
+//   }else if (dirWind >= 113 && dirWind < 158){
+//     dir = "NW";
+//   }else if (dirWind >= 158 && dirWind < 203){
+//     dir = "N";
+//   }else if (dirWind >= 203 && dirWind < 248){
+//     dir = "NE";
+//   }else if (dirWind >= 248 && dirWind < 293){
+//     dir = "W";
+//   }else if (dirWind >= 293 && dirWind < 338){
+//     dir = "SE";
+//   }
+//   return "images/flecha" + dir +".png";
+// }

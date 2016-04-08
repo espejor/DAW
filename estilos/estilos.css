@@ -326,10 +326,11 @@ nav ul li a {
     padding:1em;
 }
 
-#iconos {
+#contenido {
 
 }
 
-#iconos .icon_big img{
+#contenido .icon_big img{
   width: 15em;
+  padding: 2em;
 }
