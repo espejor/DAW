@@ -256,7 +256,7 @@ app.muestra_frcst = function() {
     );
   }
   $('#contenido').append(
-    "</div></div>"
+    "</div></div>");
 }
 
 function getDiaSemana(diaEN){
