@@ -228,10 +228,10 @@ app.muestra_frcst2 = function() {
 app.muestra_frcst = function() {
   //$('#contenido').load("section_forecast.html");
   $('#contenido').html("");
-  $('#contenido').text("<div class='section_forecast'><div class='section_content_frcst'>");
+  var txt = "<div class='section_forecast'>";
   for (i=0;i<7;i++){
     var j = i.toString();
-    $('#contenido').append(
+    txt = txt +
       "<div class='Dia' id='dia_" + i + "'>" +
         "<div class='cabecera_frcst'>" +
           "<span id='dia_sem_frcst_" + i + "'>" + getDiaSemana(app.fecha_frcst[i].getDay()) + " </span>" +
@@ -252,11 +252,10 @@ app.muestra_frcst = function() {
         "<div class='humedad_frcst'>" +
           "<span id='humedad_frcst_" + i + "'>" + app.humedad_frcst[i] + " %</span>" +
         "</div>" +
-      "</div>"
-    );
+      "</div>";
   }
-  $('#contenido').append(
-    "</div></div>");
+  txt = txt + "</div>";
+  $('#contenido').append(txt);
 }
 
 function getDiaSemana(diaEN){
