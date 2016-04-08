@@ -278,7 +278,7 @@ function crearMapa(){
   // mapholder.style.width = '500px';
 
   var myOptions = {
-    center:latlon,zoom:14,
+    center:latlon,zoom:8,
     mapTypeId:google.maps.MapTypeId.ROADMAP,
     mapTypeControl:false,
     navigationControlOptions:{style:google.maps.NavigationControlStyle.SMALL}
@@ -291,12 +291,12 @@ function crearMapa(){
     draggable:true,
     title:"You are here!"
   });
-  map.addListener('click', function(e) {
-    var coordenadas = e.latLng;
-    latitud = coordenadas.lat();
-    longitud = coordenadas.lng();
-    app.cargaDatos();
-  });
+  // map.addListener('click', function(e) {
+  //   var coordenadas = e.latLng;
+  //   latitud = coordenadas.lat();
+  //   longitud = coordenadas.lng();
+  //   app.cargaDatos();
+  // });
 
   marker.addListener('dragend', function(){
     var coordenadas = this.getPosition();
