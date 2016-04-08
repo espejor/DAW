@@ -68,7 +68,7 @@ $(document).ready(function(){
   cargaChunks();
   // Asignación de manehadores de eventos
   $('#consultar').click(asignaMunicipio);
-  $('#icon_week').click(app.cargaDatosFrcst);
+  $('#icon_week').bind("click",app.cargaDatosFrcst());
   // Cargar datos meteorológicos de la portada
   getLocation();
   app.cargaDatos();
