@@ -272,14 +272,10 @@ function getMes(mesNum){
 }
 
 function crearMapa(){
-  var latlng = new google.maps.LatLng(lat,long);
-  var myOptions = {
-    zoom: 15,
-    center: latlng,
-    mapTypeControl: false,
-    navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-  };
-
-  var map = new google.maps.Map(document.getElementById("contenido"), myOptions);
+  // Create a map object and specify the DOM element for display.
+  var map = new google.maps.Map(document.getElementById('contenido'), {
+    center: {lat: lat, lng: long},
+    scrollwheel: false,
+    zoom: 8
+  });
 }
