@@ -274,7 +274,7 @@ function getMes(mesNum){
 function crearMapa(){
   // Create a map object and specify the DOM element for display.
   var map = new google.maps.Map(document.getElementById('contenido'), {
-  //  center: {lat: latitud, lng: longitud},
+    center: {lat: latitud, lng: longitud},
     scrollwheel: false,
     zoom: 8
   });
