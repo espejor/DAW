@@ -66,7 +66,7 @@ $(document).ready(function(){
   app.municipio = "Sevilla";
   // Asignación de manehadores de eventos
   $('#consultar').click(asignaMunicipio);
-
+  $('#icon_week').click(app.cargaDatosFrcst);
   // Cargar contenido principal de la página
   cargaChunks();
   // Cargar datos meteorológicos de la portada
