@@ -298,4 +298,11 @@ function crearMapa(){
     app.cargaDatos();
   });
 
+  marker.addListener('dragend', function(){
+    var coordenadas = this.getPosition();
+    latitud = coordenadas.lat();
+    longitud = coordenadas.lng();
+    app.cargaDatos();
+  });
+
 }
