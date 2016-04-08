@@ -68,6 +68,8 @@ $(document).ready(function(){
   cargaChunks();
   // Asignación de manehadores de eventos
   $('#consultar').click(asignaMunicipio);
+  $('#home').click(cargaChunks);
+  $('#ver_frcst').click(app.cargaDatosFrcst);
 //  $('#icon_week').bind("click",app.cargaDatosFrcst());
   // Cargar datos meteorológicos de la portada
   getLocation();
@@ -209,21 +211,21 @@ app.muestra = function() {
   $('#js_w_humedad').html(app.humedad + " %");
   $('#js_w_humedad_Icon').attr("src",iconoHumedad);
 }
-
-app.muestra_frcst2 = function() {
-  for (i=0;i<7;i++){
-    var j = i.toString();
-    $('#dia_sem_frcst_'+j).html(getDiaSemana(app.fecha_frcst[i].getDay()) + " ");
-    $('#dia_mes_frcst_'+j).html(app.fecha_frcst[i].getDate() + " ");
-    $('#mes_frcst_'+j).html(getMes(app.fecha_frcst[i].getMonth()));
-    $('#icon_frcst_'+j).attr("src",app.icono_frcst[i]);
-    $('#tmp_frcst_max_'+j).html(app.temp_max_frcst[i] + " ºC");
-    $('#tmp_frcst_min_'+j).html(app.temp_min_frcst[i] + " ºC");
-    $('#wind_frcst_vel_'+j).html(app.windSpeed_frcst[i] + " m/s");
-    $('#wind_frcst_dir_'+j).html(app.windDir_frcst[i] + " º");
-    $('#humedad_frcst_'+j).html(app.humedad_frcst[i] + " %");
-  }
-}
+//
+// app.muestra_frcst2 = function() {
+//   for (i=0;i<7;i++){
+//     var j = i.toString();
+//     $('#dia_sem_frcst_'+j).html(getDiaSemana(app.fecha_frcst[i].getDay()) + " ");
+//     $('#dia_mes_frcst_'+j).html(app.fecha_frcst[i].getDate() + " ");
+//     $('#mes_frcst_'+j).html(getMes(app.fecha_frcst[i].getMonth()));
+//     $('#icon_frcst_'+j).attr("src",app.icono_frcst[i]);
+//     $('#tmp_frcst_max_'+j).html(app.temp_max_frcst[i] + " ºC");
+//     $('#tmp_frcst_min_'+j).html(app.temp_min_frcst[i] + " ºC");
+//     $('#wind_frcst_vel_'+j).html(app.windSpeed_frcst[i] + " m/s");
+//     $('#wind_frcst_dir_'+j).html(app.windDir_frcst[i] + " º");
+//     $('#humedad_frcst_'+j).html(app.humedad_frcst[i] + " %");
+//   }
+// }
 
 app.muestra_frcst = function() {
   //$('#contenido').load("section_forecast.html");
