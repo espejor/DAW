@@ -226,19 +226,37 @@ app.muestra_frcst2 = function() {
 }
 
 app.muestra_frcst = function() {
-  $('#contenido').load("section_forecast.html");
+  //$('#contenido').load("section_forecast.html");
+  $('#contenido').html(
+    "<div clas s='section_forecast'><div class='section_content_frcst'>");
   for (i=0;i<7;i++){
     var j = i.toString();
-    $('#dia_sem_frcst_'+j).html(getDiaSemana(app.fecha_frcst[i].getDay()) + " ");
-    $('#dia_mes_frcst_'+j).html(app.fecha_frcst[i].getDate() + " ");
-    $('#mes_frcst_'+j).html(getMes(app.fecha_frcst[i].getMonth()));
-    $('#icon_frcst_'+j).attr("src",app.icono_frcst[i]);
-    $('#tmp_frcst_max_'+j).html(app.temp_max_frcst[i] + " ºC");
-    $('#tmp_frcst_min_'+j).html(app.temp_min_frcst[i] + " ºC");
-    $('#wind_frcst_vel_'+j).html(app.windSpeed_frcst[i] + " m/s");
-    $('#wind_frcst_dir_'+j).html(app.windDir_frcst[i] + " º");
-    $('#humedad_frcst_'+j).html(app.humedad_frcst[i] + " %");
+    $('#contenido').append(
+      "<div class='Dia' id='dia_" + i + "'>" +
+        "<div class='cabecera_frcst'>" +
+          "<span id='dia_sem_frcst_" + i + "'>" + getDiaSemana(app.fecha_frcst[i].getDay()) + " </span>" +
+          "<span id='dia_mes_frcst_" + i + "'>" + app.fecha_frcst[i].getDate() + " </span>" +
+          "<span id='mes_frcst_" + i + "'>" + getMes(app.fecha_frcst[i].getMonth()) + "</span>" +
+        "</div>" +
+        "<div class='icon_frcst'>" +
+          "<img id='icon_frcst_" + i + "' src='" + app.icono_frcst[i] + "'>" +
+        "</div>" +
+        "<div class='tmp_frcst'>" +
+          "<p class= 'tmp_frcst_max' id='tmp_frcst_max_" + i + "'>" + app.temp_max_frcst[i] + " ºC</p>" +
+          "<p class= 'tmp_frcst_min' id='tmp_frcst_min_" + i + "'>" + app.temp_min_frcst[i] + " ºC</p>" +
+        "</div>" +
+        "<div class='wind_frcst'>" +
+            "<p class= 'wind_frcst_vel' id='wind_frcst_vel_" + i + "'>" + app.windSpeed_frcst[i] + " m/s</p>" +
+            "<p class= 'wind_frcst_dir' id='wind_frcst_dir_" + i + "'>" + app.windDir_frcst[i] + " º</p>" +
+        "</div>" +
+        "<div class='humedad_frcst'>"
+          "<span id='humedad_frcst_" + i + "'>" + app.humedad_frcst[i] + " %</span>"
+        "</div>" +
+      "</div>"
+    );
   }
+  $('#contenido').append(
+    "</div></div>"
 }
 
 function getDiaSemana(diaEN){
