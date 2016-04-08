@@ -273,9 +273,9 @@ function getMes(mesNum){
 
 function crearMapa(){
   latlon = new google.maps.LatLng(latitud, longitud)
-  mapholder = document.getElementById('contenido')
-  mapholder.style.height = '250px';
-  mapholder.style.width = '500px';
+  // mapholder = document.getElementById('contenido')
+  // mapholder.style.height = '250px';
+  // mapholder.style.width = '500px';
 
   var myOptions = {
     center:latlon,zoom:14,
