@@ -281,5 +281,5 @@ function crearMapa(){
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
 
-  var map = new google.maps.Map($('#contenido'), myOptions);
+  var map = new google.maps.Map(document.getElementById("contenido"), myOptions);
 }
