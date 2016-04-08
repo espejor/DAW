@@ -64,11 +64,11 @@ $(document).ready(function(){
   // Variables de inico
   app.apikey = "05b19ab20e25b29516d13983b8491391";
   app.municipio = "Sevilla";
+  // Cargar contenido principal de la página
+  cargaChunks();
   // Asignación de manehadores de eventos
   $('#consultar').click(asignaMunicipio);
   $('#icon_week').click(app.cargaDatosFrcst);
-  // Cargar contenido principal de la página
-  cargaChunks();
   // Cargar datos meteorológicos de la portada
   getLocation();
   app.cargaDatos();
