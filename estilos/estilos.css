@@ -330,7 +330,6 @@ nav ul li a {
 
 }
 
-.icon_big{
+a .icon_big{
   width: 15em;
-  height: 15em;
 }
