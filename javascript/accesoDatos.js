@@ -83,6 +83,7 @@ function miTiempo(){
 }
 
 function cargaChunks(){
+  $('#contenido').css("height","auto");
   $('#contenido').load("iconos.html");
 }
 
@@ -235,6 +236,8 @@ app.muestra = function() {
 app.muestra_frcst = function() {
   //$('#contenido').load("section_forecast.html");
   $('#contenido').html("");
+  $('#contenido').css("height","auto");
+
   var txt = "<div class='section_forecast'>";
   for (i=0;i<7;i++){
     var j = i.toString();
@@ -279,7 +282,7 @@ function crearMapa(){
   latlon = new google.maps.LatLng(latitud, longitud)
   // mapholder = document.getElementById('contenido')
   // mapholder.style.height = '250px';
-  // mapholder.style.width = '500px';
+  $('#contenido').css("height","500px");
 
   var myOptions = {
     center:latlon,zoom:8,
