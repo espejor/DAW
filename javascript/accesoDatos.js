@@ -115,7 +115,23 @@ app.cargaDatos = function() {
     app.cargaDatosFrcst();
   }
   if ($('#contenido').attr("title") == "mapa"){
-    app.crearMapa();
+    obtenerCoordenada();
+    crearMapa();
+  }
+}
+
+function obtenerCoordenada(){
+  // Creamos el Objeto Geocoder
+  var geocoder = new google.maps.Geocoder();
+  // Hacemos la petición indicando la dirección e invocamos la función
+  // geocodeResult enviando todo el resultado obtenido
+  geocoder.geocode({ 'address': app.municipio}, geocodeResult);
+}
+
+function geocodeResult(){
+  if (status == 'OK'){
+    latitud = results[0].geometry.location.lat;
+    longitud = results[0].geometry.location.lng;
   }
 }
 
