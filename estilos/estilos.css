@@ -77,6 +77,15 @@ body{
     display:block;
 }
 
+#area_inicio{
+  width: 10em;
+  height: 3em;
+  position: absolute;
+  top : 3em;
+  right: 2em;
+  background-color: black;
+}
+
 main{
   display: block;
   background-color: black;
