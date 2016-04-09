@@ -66,17 +66,21 @@ $(document).ready(function(){
   app.municipio = "Sevilla";
   // Cargar contenido principal de la página
   cargaChunks();
-  // Asignación de manehadores de eventos
+  // Asignación de manejadores de eventos
   $('#consultar').click(asignaMunicipio);
   $('#home').click(cargaChunks);
   $('#ver_frcst').click(app.cargaDatosFrcst);
   $('#buscar_en_mapa').click(crearMapa);
-//  $('#icon_week').bind("click",app.cargaDatosFrcst());
+  $('#area_inicio').click(miTiempo)
   // Cargar datos meteorológicos de la portada
+  miTiempo();
+  //  app.cargaDatosFrcst();
+});
+
+function miTiempo(){
   getLocation();
   app.cargaDatos();
-//  app.cargaDatosFrcst();
-});
+}
 
 function cargaChunks(){
   $('#contenido').load("iconos.html");
