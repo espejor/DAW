@@ -111,10 +111,10 @@ app.cargaDatos = function() {
     }
   });
 
-  if ($('#contenido').title == "forecast"){
+  if ($('#contenido').attr("title") == "forecast"){
     app.cargaDatosFrcst();
   }
-  if ($('#contenido').title == "mapa"){
+  if ($('#contenido').attr("title") == "mapa"){
     app.crearMapa();
   }
 }
