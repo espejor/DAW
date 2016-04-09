@@ -116,7 +116,6 @@ app.cargaDatos = function() {
   }
   if ($('#contenido').attr("title") == "mapa"){
     obtenerCoordenada();
-    crearMapa();
   }
 }
 
@@ -132,6 +131,7 @@ function geocodeResult(results, status){
   if (status == 'OK'){
     latitud = results[0].geometry.location.lat();
     longitud = results[0].geometry.location.lng();
+    crearMapa();
   }
 }
 
