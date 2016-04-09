@@ -104,20 +104,19 @@ app.cargaDatos = function() {
     success: function(data) {
       app.datos = data;
       app.procesaDatos();
+      if ($('#contenido').attr("title") == "forecast"){
+        app.cargaDatosFrcst();
+      }
+      if ($('#contenido').attr("title") == "mapa"){
+        obtenerCoordenada();
+        crearMapa();
+      }
     },
     error: function() {
       $('#contenido').load("error.html");
       $('#contenido').attr("title","error");
     }
   });
-
-  if ($('#contenido').attr("title") == "forecast"){
-    app.cargaDatosFrcst();
-  }
-  if ($('#contenido').attr("title") == "mapa"){
-    obtenerCoordenada();
-    crearMapa();
-  }
 }
 
 function obtenerCoordenada(){
