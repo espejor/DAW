@@ -103,11 +103,9 @@ app.cargaDatos = function() {
     success: function(data) {
       app.datos = data;
       app.procesaDatos();
-      borraError();
     },
     error: function() {
-      $('#error').load("error.html");
-      borraTabla();
+      $('#contenido').load("error.html");
     }
   });
 }
@@ -123,24 +121,12 @@ app.cargaDatosFrcst = function() {
     success: function(data) {
       app.datos_frcst = data;
       app.procesaDatos_frcst();
-      borraError();
     },
     error: function() {
 //      alert("Ups! No puedo obtener información de la previsión a una semana");
-      $('#error').load("errorFrcst.html");
-      $('#recargarFrcst').html("He cambiado");
-//      $('#recargarFrcst').click(app.cargaDatosFrcst());
-      borraTabla();
+      $('#contenido').load("errorFrcst.html");
     }
   });
-}
-
-function borraTabla(){
-  $('div.section_forecast').html("");
-}
-
-function borraError(){
-  $('div.error').html("");
 }
 
 app.procesaDatos = function() {
