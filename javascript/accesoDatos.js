@@ -130,8 +130,8 @@ function obtenerCoordenada(){
 
 function geocodeResult(results, status){
   if (status == 'OK'){
-    latitud = results[0].geometry.location.lat;
-    longitud = results[0].geometry.location.lng;
+    latitud = results[0].geometry.location.lat();
+    longitud = results[0].geometry.location.lng();
   }
 }
 

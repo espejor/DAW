@@ -290,6 +290,7 @@ header .busqueda{
 p .errorMsg{
   text-align: center;
   padding: 1em;
+  color: black;
 }
 
 nav{
