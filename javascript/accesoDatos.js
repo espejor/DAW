@@ -128,7 +128,7 @@ function obtenerCoordenada(){
   geocoder.geocode({ 'address': app.municipio}, geocodeResult);
 }
 
-function geocodeResult(){
+function geocodeResult(results, status){
   if (status == 'OK'){
     latitud = results[0].geometry.location.lat;
     longitud = results[0].geometry.location.lng;
