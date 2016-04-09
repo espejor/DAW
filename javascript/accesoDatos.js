@@ -127,8 +127,8 @@ function obtenerCoordenada(){
   // // geocodeResult enviando todo el resultado obtenido
   // geocoder.geocode({ 'address': municipio}, geocodeResult);
 
-  longitud = app.datos.coords.lon;
-  latitud = app.datos.coords.lat;
+  longitud = app.datos.coord.lon;
+  latitud = app.datos.coord.lat;
 }
 
 function geocodeResult(results, status){
