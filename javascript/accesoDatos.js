@@ -116,15 +116,19 @@ app.cargaDatos = function() {
   }
   if ($('#contenido').attr("title") == "mapa"){
     obtenerCoordenada();
+    crearMapa();
   }
 }
 
 function obtenerCoordenada(){
-  // Creamos el Objeto Geocoder
-  var geocoder = new google.maps.Geocoder();
-  // Hacemos la petición indicando la dirección e invocamos la función
-  // geocodeResult enviando todo el resultado obtenido
-  geocoder.geocode({ 'address': app.municipio}, geocodeResult);
+  // // Creamos el Objeto Geocoder
+  // var geocoder = new google.maps.Geocoder();
+  // // Hacemos la petición indicando la dirección e invocamos la función
+  // // geocodeResult enviando todo el resultado obtenido
+  // geocoder.geocode({ 'address': municipio}, geocodeResult);
+
+  longitud = app.datos.coords.lon;
+  latitud = app.datos.coords.lat;
 }
 
 function geocodeResult(results, status){
