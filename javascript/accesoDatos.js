@@ -84,6 +84,7 @@ function miTiempo(){
 
 function cargaChunks(){
   $('#contenido').css("height","auto");
+  $('#contenido').attr("title","inicio");
   $('#contenido').load("iconos.html");
 }
 
@@ -106,8 +107,16 @@ app.cargaDatos = function() {
     },
     error: function() {
       $('#contenido').load("error.html");
+      $('#contenido').attr("title","error");
     }
   });
+
+  if ($('#contenido').title == "forecast"){
+    app.cargaDatosFrcst();
+  }
+  if ($('#contenido').title == "mapa"){
+    app.crearMapa();
+  }
 }
 
 app.cargaDatosFrcst = function() {
@@ -125,6 +134,7 @@ app.cargaDatosFrcst = function() {
     error: function() {
 //      alert("Ups! No puedo obtener información de la previsión a una semana");
       $('#contenido').load("errorFrcst.html");
+      $('#contenido').attr("title","errorFrcst");
     }
   });
 }
@@ -223,6 +233,7 @@ app.muestra_frcst = function() {
   //$('#contenido').load("section_forecast.html");
   $('#contenido').html("");
   $('#contenido').css("height","auto");
+  $('#contenido').attr("title","forecast");
 
   var txt = "<div class='section_forecast'>";
   for (i=0;i<7;i++){
@@ -269,6 +280,7 @@ function crearMapa(){
   // mapholder = document.getElementById('contenido')
   // mapholder.style.height = '250px';
   $('#contenido').css("height","500px");
+  $('#contenido').attr("title","mapa");
 
   var myOptions = {
     center:latlon,zoom:8,
