@@ -59,9 +59,6 @@ function asignaMunicipio(){
 //  app.cargaDatosFrcst();
 }
 
-function cambiarArchivoCss(archivo) {
-  $('#css_base').href=archivo;
-}
 
 $(document).ready(function(){
   // Variables de inico
@@ -78,9 +75,7 @@ $(document).ready(function(){
   // Cargar datos meteorológicos de la portada
   miTiempo();
   //  app.cargaDatosFrcst();
-  if(jQuery.browser.mobile){
-    cambiarArchivoCss("estilos/movil.css");
-  }
+
 });
 
 function miTiempo(){
