@@ -26,6 +26,11 @@ header{
 	display: block;
 	font-size: 1.5em;
 }
+
+.icon_big img {
+    width: 12em;
+    padding: 1em;
+}
 /*#titulo{
 	position:absolute;
 	width:600px;
