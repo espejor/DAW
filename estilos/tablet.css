@@ -27,10 +27,7 @@ header{
 	font-size: 1.5em;
 }
 
-.icon_big img {
-    width: 120px;
-    padding: 1em;
-}
+
 /*#titulo{
 	position:absolute;
 	width:600px;
@@ -295,6 +292,6 @@ footer{
 	}
 
 	#contenido .icon_big img {
-	    width: 18em;
-	    padding: 2em;
+	    width: 12em;
+	    padding: 1em;
 	}
