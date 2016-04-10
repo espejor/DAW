@@ -158,6 +158,15 @@ aside section {
 aside section header h3{
 	padding: 2em 0em 0em 1em;
 }
+
+#nav_movil{
+  display: none;
+}
+
+form{
+  display: flex;
+}
+
 input {
   padding: .2em;
   /*border: 2px solid #eae1c0;*/

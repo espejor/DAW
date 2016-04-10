@@ -8,8 +8,7 @@ html,body{
     margin:0px;
     }
 body{
-	background:url('../img/fondo.png'),rgba(0,0,0,0.1);
-	background-repeat:repeat-x;
+
 	}
 h1,h2,h3,h4,h5,h6,p {
 	padding:0px;
@@ -26,6 +25,19 @@ h2{
 	font-weight:normal;
 	font-style:italic;
 	}
+
+.busqueda{
+}
+
+
+#nav_movil{
+  display: inline;
+  position: relative;
+}
+
+#nav_movil .icon_big{
+  width: 50px;
+}
 
 ul {
 	list-style-type:none;
@@ -64,7 +76,7 @@ footer{
 /*FORMULARIO*/
 #newSolicitudForm{
 	margin:20px;
-    }
+}
 #newSolicitudForm form input[type=text], #newSolicitudForm form textarea{
 	width: 90%;
 	font-size:20px;
@@ -89,14 +101,7 @@ footer{
 #newSolicitudForm form .formleyenda{
 	margin:5px;
 	}
-/*BLOG*/
-#contenedorarticulosblog #articulos article h3{
-	font-family: 'Merienda', cursive;
-	background:url('../img/open.png');
-	background-repeat:no-repeat;
-	padding-left:30px;
-	font-size:20px;
-    }
+
 nav{
   display: none;
 }
