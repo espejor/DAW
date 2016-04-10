@@ -29,13 +29,13 @@ section{
 	position:relative;
 	top:100px;
     }
-#titulo{
+/*#titulo{
 	position:absolute;
 	width:600px;
     height:100px;
 	margin:0px;
 	padding:0px;
-    }
+    }*/
 h1,h2,h3,h4,h5,h6,p {
     padding:0px;
     margin:0px;
@@ -54,14 +54,14 @@ h2{
 	top:0px;
 	left:20px;
     }
-#logo{
+/*#logo{
 	width:100px;
 	height:100px;
 	margin-right:20px;
 	margin-bottom:20px;
 	background:url('../img/logo.png');
 	float:left;
-	}
+	}*/
 nav{
 	margin-top:100px;
 	border:1px solid grey;
@@ -90,7 +90,7 @@ nav ul li a{
 	text-shadow:3px 3px 3px grey;
 	text-decoration:none;
 	}
-#banner{
+/*#banner{
 	width:60%;
 	margin-left:35%;
 	margin-top:20px;
@@ -145,7 +145,7 @@ article .contenidoarticulo h3{
 #img3{
 	background:url('../img/img3.jpg');
 	background-size:100% 100%;
-	}
+	}*/
 footer{
 	margin-top:-250px;
 	height:30px;
@@ -159,7 +159,7 @@ footer{
 	box-shadow:0px 10px 25px rgba(0,0,0,0.3);
 	margin-top:10px;
 	margin-left:33%;
-    }
+}
 #newSolicitudForm form{
 	width:90%;
 	margin:auto;
@@ -168,31 +168,31 @@ footer{
 	margin-top:10px;
     }
 #newSolicitudForm form input[type=text], #newSolicitudForm form textarea{
-	width: 90%;
-	font-size:20px;
-	padding:10px;
-	height:20px;
-	margin:auto;
-	margin-left:5px;
-	-webkit-box-shadow:0px 0px 25px rgba(0,0,0,0.3) inset;
+  	width: 90%;
+  	font-size:20px;
+  	padding:10px;
+  	height:20px;
+  	margin:auto;
+  	margin-left:5px;
+  	-webkit-box-shadow:0px 0px 25px rgba(0,0,0,0.3) inset;
     box-shadow:0px 0px 25px rgba(0,0,0,0.3) inset;
     border-radius: .6em;
 	}
 #newSolicitudForm form textarea{
-	height:100px;
+	 height:100px;
 	}
-#newSolicitudForm form input[type=submit]{
-	width:50%;
-	margin:20px;
-	font-size:20px;
-	padding: .3em;
+#newSolicitudForm form input{
+  	width:50%;
+  	margin:20px;
+  	font-size:20px;
+  	padding: .3em;
     border-radius: .6em;
 	}
 #newSolicitudForm form .formleyenda{
 	margin:5px;
 	}
 /*BLOG*/
-#articulos{
+/*#articulos{
 	width:40%;
 	background:white;
 	float:left;
@@ -245,7 +245,7 @@ aside{
 	margin-top:120px;
 	}
 /*PRODUCTOS*/
-#contenedorproductos{
+/*#contenedorproductos{
 	width:60%;
 	background:white;
 	float:left;
@@ -272,14 +272,14 @@ aside{
 	border-radius:0px 20px 20px 0px;
 	padding:10px;
 	background: rgb(94,98,104); /* Old browsers */
-	background: -moz-linear-gradient(top,  rgba(94,98,104,1) 0%, rgba(130,140,149,1) 55%, rgba(181,189,200,1) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(94,98,104,1)), color-stop(55%,rgba(130,140,149,1)), color-stop(100%,rgba(181,189,200,1))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  rgba(94,98,104,1) 0%,rgba(130,140,149,1) 55%,rgba(181,189,200,1) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  rgba(94,98,104,1) 0%,rgba(130,140,149,1) 55%,rgba(181,189,200,1) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  rgba(94,98,104,1) 0%,rgba(130,140,149,1) 55%,rgba(181,189,200,1) 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  rgba(94,98,104,1) 0%,rgba(130,140,149,1) 55%,rgba(181,189,200,1) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5e6268', endColorstr='#b5bdc8',GradientType=0 ); /* IE6-9 */
-	box-shadow:0px 10px 15px rgba(0,0,0,0.4);
+	/*background: -moz-linear-gradient(top,  rgba(94,98,104,1) 0%, rgba(130,140,149,1) 55%, rgba(181,189,200,1) 100%); /* FF3.6+ */
+	/*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(94,98,104,1)), color-stop(55%,rgba(130,140,149,1)), color-stop(100%,rgba(181,189,200,1))); /* Chrome,Safari4+ */*/
+	/*background: -webkit-linear-gradient(top,  rgba(94,98,104,1) 0%,rgba(130,140,149,1) 55%,rgba(181,189,200,1) 100%); /* Chrome10+,Safari5.1+ */*/
+	/*background: -o-linear-gradient(top,  rgba(94,98,104,1) 0%,rgba(130,140,149,1) 55%,rgba(181,189,200,1) 100%); /* Opera 11.10+ */*/
+	/*background: -ms-linear-gradient(top,  rgba(94,98,104,1) 0%,rgba(130,140,149,1) 55%,rgba(181,189,200,1) 100%); /* IE10+ */*/
+	/*background: linear-gradient(to bottom,  rgba(94,98,104,1) 0%,rgba(130,140,149,1) 55%,rgba(181,189,200,1) 100%); /* W3C */*/
+	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5e6268', endColorstr='#b5bdc8',GradientType=0 ); /* IE6-9 */*/
+	/*box-shadow:0px 10px 15px rgba(0,0,0,0.4);
 	margin-bottom:30px;
 	}
 .artproducto p a{
@@ -287,7 +287,7 @@ aside{
 	font-weight:bold;
 	font-size:12px;
 	text-decoration:none;
-	}
+	}*/
 body{
 	overflow:visible;
 	}
