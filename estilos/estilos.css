@@ -287,7 +287,7 @@ header .busqueda{
   margin: 0;
 }
 
-p .errorMsg{
+.errorMsg{
   text-align: center;
   padding: 1em;
   color: black;
