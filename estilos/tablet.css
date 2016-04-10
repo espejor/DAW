@@ -8,9 +8,12 @@ body,html{
 	height:100%;
 	margin:0px;
 	padding:0px;
-	}
+}
+
 body{
-  }
+	overflow:visible;
+	background-color: black;
+}
 #contenido{
 	width:62%;
 	float: right;
@@ -290,10 +293,7 @@ aside{
 	font-size:12px;
 	text-decoration:none;
 	}*/
-body{
-	overflow:visible;
-	background-color: black;
-	}
+
 footer{
 	display:none;
 	}
