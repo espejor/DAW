@@ -33,10 +33,12 @@ h2{
 #nav_movil{
   display: inline;
   position: relative;
+  width: 100%
 }
 
 #nav_movil .icon_big img{
-  width: 25%;
+  width: 13%;
+  padding: 1% 6% 1% 5%;
 }
 
 ul {
