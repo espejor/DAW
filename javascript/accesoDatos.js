@@ -85,8 +85,8 @@ function miTiempo(){
 function cargaChunks(){
   $('#contenido').css("height","auto");
   $('#contenido').attr("title","inicio");
-  $('#contenido').load("iconos.html");
   $('#nav_movil').load("iconos.html");
+  $('#contenido').load("iconos.html");
 }
 
 app.cargaDatos = function() {
