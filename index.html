@@ -4,7 +4,7 @@
   <head>
     <title>Practica 1. DAW</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
+    <!-- <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" /> -->
     <META NAME="Author" CONTENT="José Espejo Roig">
     <link rel="stylesheet" href="estilos/estilos.css" />
     <script src="javascript/jquery-2.2.1.min.js"></script>
@@ -36,8 +36,12 @@
         </div>
         <div class="busqueda">
           <form id="newSolicitudForm" >
-            <input type="text" name="municipio" id="municipio" placeholder="Municipio" required="required"/>
-            <input type="button" id = "consultar" name="consultar" value="Consultar"/>
+            <div class="input_text">
+              <input type="text" name="municipio" id="municipio" placeholder="Municipio" required="required"/>
+            </div>
+            <div class"input_btn">
+              <input type="button" id = "consultar" name="consultar" value="Consultar"/>
+            </div>
           </form>
         </div>
 
