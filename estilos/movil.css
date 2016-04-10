@@ -27,8 +27,20 @@ h2{
 	}
 
 .busqueda{
+  font-size: 3em;
+  bottom: -24em;
+  left: 7em;
 }
 
+.viento{
+  font-size: 4em;
+  bottom: 0em;
+  left: 7em;
+}
+
+.section_forecast{
+  font-size: 2.8em;
+}
 
 #nav_movil{
   display: inline;
