@@ -35,8 +35,8 @@ h2{
   position: relative;
 }
 
-#nav_movil .icon_big{
-  width: 50px;
+#nav_movil a .icon_big{
+  width: 25%;
 }
 
 ul {
