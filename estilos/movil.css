@@ -31,7 +31,7 @@ h2{
   font-size: 5em;
   /*bottom: -84em;*/
   top: 10em;
-  left: 5em;
+  left: 1em;
 }
 
 .viento{
@@ -47,7 +47,8 @@ h2{
 #nav_movil{
   display: inline;
   position: relative;
-  width: 100%
+  width: 100%;
+  margin-top: 3em;
 }
 
 #nav_movil .icon_big img{
