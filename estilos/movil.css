@@ -31,7 +31,7 @@ h2{
   font-size: 6em;
   /*bottom: -84em;*/
   top: 9em;
-  left: .2em;
+  left: 2px;
 }
 .now_temp{
   font-size: 4em;
@@ -40,7 +40,7 @@ h2{
 .viento{
   font-size: 8em;
   bottom: 0em;
-  right: : 1em;
+  right: : 2px;
 }
 
 .section_forecast{
@@ -51,7 +51,7 @@ h2{
   display: inline-block;
   position: relative;
   width: 100%;
-  margin-top: 100px;
+  margin-top: 120px;
 }
 
 #nav_movil .icon_big img{
