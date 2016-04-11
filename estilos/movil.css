@@ -28,27 +28,30 @@ h2{
 
 .busqueda{
   position: absolute;
-  font-size: 5em;
+  font-size: 7em;
   /*bottom: -84em;*/
   top: 10em;
-  left: 1em;
+  left: .2em;
+}
+.now_temp{
+  font-size: 18em;  
 }
 
 .viento{
-  font-size: 4em;
+  font-size: 8em;
   bottom: 0em;
-  left: 7em;
+  left: 14em;
 }
 
 .section_forecast{
-  font-size: 3.5em;
+  font-size: 5em;
 }
 
 #nav_movil{
   display: inline-block;;
   position: relative;
   width: 100%;
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
 #nav_movil .icon_big img{
@@ -89,7 +92,7 @@ ul li a{
 
 footer{
 	text-align:center;
-  font-size: 2.8em;
+  font-size: 5em;
 	}
 /*FORMULARIO*/
 #newSolicitudForm{
