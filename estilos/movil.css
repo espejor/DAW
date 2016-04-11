@@ -28,13 +28,13 @@ h2{
 
 .busqueda{
   position: absolute;
-  font-size: 5em;
+  font-size: 4em;
   /*bottom: -84em;*/
-  top: 10em;
+  top: 8em;
   left: .2em;
 }
 .now_temp{
-  font-size: 8em;  
+  font-size: 8em;
 }
 
 .viento{
@@ -48,10 +48,10 @@ h2{
 }
 
 #nav_movil{
-  display: inline-block;;
+  display: inline-block;
   position: relative;
   width: 100%;
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 #nav_movil .icon_big img{
