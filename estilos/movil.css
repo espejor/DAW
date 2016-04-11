@@ -27,8 +27,9 @@ h2{
 	}
 
 .busqueda{
-  font-size: 4em;
-  bottom: -44em;
+  position: relative;
+  font-size: 5em;
+  /*bottom: -84em;*/
   left: 5em;
 }
 
@@ -39,7 +40,7 @@ h2{
 }
 
 .section_forecast{
-  font-size: 3.2em;
+  font-size: 3.5em;
 }
 
 #nav_movil{
