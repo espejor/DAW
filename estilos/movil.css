@@ -30,7 +30,7 @@ h2{
   position: absolute;
   font-size: 6em;
   /*bottom: -84em;*/
-  top: 10em;
+  top: 9em;
   left: .2em;
 }
 .now_temp{
@@ -40,7 +40,7 @@ h2{
 .viento{
   font-size: 8em;
   bottom: 0em;
-  left: 7em;
+  right: : 1em;
 }
 
 .section_forecast{
