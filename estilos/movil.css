@@ -28,19 +28,19 @@ h2{
 
 .busqueda{
   position: absolute;
-  font-size: 7em;
+  font-size: 5em;
   /*bottom: -84em;*/
   top: 10em;
   left: .2em;
 }
 .now_temp{
-  font-size: 18em;  
+  font-size: 8em;  
 }
 
 .viento{
   font-size: 8em;
   bottom: 0em;
-  left: 14em;
+  left: 7em;
 }
 
 .section_forecast{
