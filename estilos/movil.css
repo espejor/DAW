@@ -28,13 +28,13 @@ h2{
 
 .busqueda{
   position: absolute;
-  font-size: 4em;
+  font-size: 6em;
   /*bottom: -84em;*/
-  top: 8em;
+  top: 10em;
   left: .2em;
 }
 .now_temp{
-  font-size: 8em;
+  font-size: 4em;
 }
 
 .viento{
