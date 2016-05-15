@@ -297,6 +297,8 @@ function getMes(mesNum){
 }
 
 function crearMapa(){
+  longitud = app.datos.coord.lon;
+  latitud = app.datos.coord.lat;
   latlon = new google.maps.LatLng(latitud, longitud)
   // mapholder = document.getElementById('contenido')
   // mapholder.style.height = '250px';
